@@ -51,7 +51,7 @@ Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most ou
 
 <script>
 $(document).ready( function () {
-    $('#datatable').DataTable();
+    $('#datatable-begin').DataTable();
 } );
 </script>
 
