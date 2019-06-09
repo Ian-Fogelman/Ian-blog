@@ -52,11 +52,11 @@ Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most ou
 
 
 
-<!--<script>
+<script>
 $(document).ready( function () {
     $('#datatable-begin').DataTable();
 } );
-</script>-->
+</script>
 
 [jekyll-docs]: https://jekyllrb.com/docs/home
 [jekyll-gh]:   https://github.com/jekyll/jekyll
