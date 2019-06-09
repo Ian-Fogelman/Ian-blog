@@ -6,6 +6,12 @@ description: You’ll find this post in your `_posts` directory. Go ahead and ed
 img: post-3.jpg # Add image post (optional)
 tags: [Blog, Sunset]
 datatable: true
+
+<script>
+$(document).ready( function () {
+    $('#datatable-begin').DataTable();
+} );
+</script>
 author: # Add name author (optional)
 ---
 
@@ -46,11 +52,7 @@ print_hi('Tom')
 Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
 
 
-<script>
-$(document).ready( function () {
-    $('#datatable-begin').DataTable();
-} );
-</script>
+
 [jekyll-docs]: https://jekyllrb.com/docs/home
 [jekyll-gh]:   https://github.com/jekyll/jekyll
 [jekyll-talk]: https://talk.jekyllrb.com/
