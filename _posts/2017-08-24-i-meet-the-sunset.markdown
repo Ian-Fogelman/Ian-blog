@@ -8,8 +8,7 @@ tags: [Blog, Sunset]
 author: # Add name author (optional)
 ---
 
-<!DOCTYPE html>
-<html>
+
 
 <head>
   <!-- <link rel="stylesheet" href="//cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css" /> -->
@@ -20,7 +19,6 @@ author: # Add name author (optional)
   <link rel="stylesheet" href="style.css" />
 </head>
 
-<body>
   <div class="container-fluid">
     <table class="datatable table table-hover table-bordered">
       <thead>
@@ -84,9 +82,6 @@ author: # Add name author (optional)
   <script src="//cdn.datatables.net/buttons/1.2.1/js/buttons.html5.min.js"></script>
   
   <script src="script.js"></script>
-</body>
-
-</html>
 
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
