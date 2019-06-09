@@ -1,4 +1,4 @@
-title: My personal blog - Ian Fogelman
+title: SFS blog - Ian Fogelman
 email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
@@ -14,7 +14,7 @@ author-pic: 0.jpg #Ianvex.PNG #
 about-author: My name is Ian Fogelman. I like to develop data driven solutions.
 
 # Contact links
-email: # Add your Email address
+email: IanFogelman@gmail.com # Add your Email address
 phone: # Add your Phone number
 website: # Add your website, do not add http://
 linkedin: # Add your Linkedin handle
