@@ -23,22 +23,41 @@ You’ll find this post in your `_posts` directory. Go ahead and edit it and re-
 
 To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
 
-<div class="datatable-begin"></div>
 
-Food    | Description                           | Category | Sample type
-------- | ------------------------------------- | -------- | -----------
-Apples  | A small, somewhat round ...           | Fruit    | Fuji
-Bananas | A long and curved, often-yellow ...   | Fruit    | Snow
-Kiwis   | A small, hairy-skinned sweet ...      | Fruit    | Golden
-Oranges | A spherical, orange-colored sweet ... | Fruit    | Navel
-
-<div class="datatable-end"></div>
-
-| Priority apples | Second priority | Third priority |
-|---------|----------|-----------|
-| ambrosia | gala | red delicious |
-| pink lady | jazz | macintosh |
-| honeycrisp | granny smith | fuji |
+  <div class="container-fluid">
+    <table class="datatable table table-hover table-bordered">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Address</th>
+          <th>Class</th>
+        </tr>
+      </thead>
+      <tfoot>
+      </tfoot>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Jane</td>
+          <td>Address 1</td>
+          <td>A</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>John</td>
+          <td>Address 2</td>
+          <td>B</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Jasmin</td>
+          <td>Address 3</td>
+          <td>A</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 
 
 ![My helpful screenshot](/assets/img/SFS_Logo.PNG)
