@@ -7,11 +7,6 @@ img: post-3.jpg # Add image post (optional)
 tags: [Blog, Sunset]
 datatable: true
 
-<script>
-$(document).ready( function () {
-    $('#datatable-begin').DataTable();
-} );
-</script>
 author: # Add name author (optional)
 ---
 
@@ -53,6 +48,11 @@ Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most ou
 
 
 
+<!--<script>
+$(document).ready( function () {
+    $('#datatable-begin').DataTable();
+} );
+</script>-->
 [jekyll-docs]: https://jekyllrb.com/docs/home
 [jekyll-gh]:   https://github.com/jekyll/jekyll
 [jekyll-talk]: https://talk.jekyllrb.com/
