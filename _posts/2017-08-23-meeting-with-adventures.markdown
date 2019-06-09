@@ -34,6 +34,11 @@ Oranges | A spherical, orange-colored sweet ... | Fruit    | Navel
 
 <div class="datatable-end"></div>
 
+| Priority apples | Second priority | Third priority |
+|---------|----------|-----------|
+| ambrosia | gala | red delicious |
+| pink lady | jazz | macintosh |
+| honeycrisp | granny smith | fuji |
 
 
 ![My helpful screenshot](/assets/img/SFS_Logo.PNG)
