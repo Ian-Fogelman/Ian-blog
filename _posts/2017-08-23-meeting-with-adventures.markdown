@@ -27,7 +27,7 @@ To add new posts, simply add a file in the `_posts` directory that follows the c
 | honeycrisp | granny smith | fuji |
 
 
-<div class="datatable-begin"></div>
+<div class="datatable-begin display"></div>
 
 Food    | Description                           | Category | Sample type
 ------- | ------------------------------------- | -------- | -----------
