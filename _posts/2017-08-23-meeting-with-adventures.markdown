@@ -9,9 +9,9 @@ tags: [Blog, Sunset]
 datatable: true
 author: # Add name author (optional)
 ---
-
-<head>
 <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+<head>
+
 <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
 </head>
 
