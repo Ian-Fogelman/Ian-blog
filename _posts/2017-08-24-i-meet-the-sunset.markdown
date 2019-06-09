@@ -10,10 +10,10 @@ author: # Add name author (optional)
 
 
 
-<!--<head>
+<head>
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/datatables/1.10.12/css/dataTables.bootstrap.min.css" />
   <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.2.1/css/buttons.bootstrap.min.css" type="text/css" />
-</head>-->
+</head>
 
   <div class="container-fluid">
     <table class="datatable table table-hover table-bordered">
