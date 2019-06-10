@@ -27,7 +27,8 @@ import json
 import pandas as pd
 {% endhighlight %}  
 
-
+<br>
+<br>
 
 
 For this demo we will use a free API that is hosted at http://api.icndb.com.
