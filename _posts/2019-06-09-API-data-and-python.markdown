@@ -14,7 +14,7 @@ Today I will discuss how to retreive restful API data using python.
 
 In particular we will make use of the following libraries:
 
-requests,json and pandas all of the code in this post can be downloaded on my cloud anaconda page <a href="https://anaconda.org/IanFogelman/api-data-and-python/notebook">here </a>.
+requests,json and pandas all of the code in this post can be downloaded on my cloud anaconda page <a href="https://anaconda.org/IanFogelman/api-data-and-python/notebook">here</a>.
     
 First lets import our libraries, if you do not have these libraries, use the !pip install command to install them.
 
@@ -24,15 +24,15 @@ import requests
 import json
 import pandas as pd
 {% endhighlight %}  
-<br \>
-<br />
-<br \>
+
+
+
+
 For this demo we will use a free API that is hosted at http://api.icndb.com.
 This particular API returns jokes about the famous western and kungfu guru Chuck Norris.
 At its core we can achieve a simple get request as follows :
-<br \>
-<br />
-<br \>
+
+
 
 {% highlight python %}
 url = """http://api.icndb.com/jokes/random?"""
@@ -56,9 +56,16 @@ print(j['value']['joke'])
 #Chuck Norris breaks RSA 128-bit encrypted codes in milliseconds.
 {% endhighlight %}  
 
+
+
+
 Here we get a more appealing result just the actual joke text returned from the API.
 
+
+
 Lastly lets see if we can get this results into a pandas dataframe.
+
+
 
 I will write a for loop to call a GET request 5 times, parse the joke portion of the returned json data and append that to our dataframe.
 
