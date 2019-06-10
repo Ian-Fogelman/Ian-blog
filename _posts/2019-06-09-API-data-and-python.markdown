@@ -24,13 +24,15 @@ import requests
 import json
 import pandas as pd
 {% endhighlight %}  
-
-
-
+<br \>
+<br />
+<br \>
 For this demo we will use a free API that is hosted at http://api.icndb.com.
 This particular API returns jokes about the famous western and kungfu guru Chuck Norris.
 At its core we can achieve a simple get request as follows :
-
+<br \>
+<br />
+<br \>
 
 {% highlight python %}
 url = """http://api.icndb.com/jokes/random?"""
