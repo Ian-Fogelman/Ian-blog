@@ -18,6 +18,8 @@ requests,json and pandas all of the code in this post can be downloaded on my cl
     
 First lets import our libraries, if you do not have these libraries, use the !pip install command to install them.
 
+<br>
+<br>
 
 {% highlight python %}
 import requests
@@ -32,7 +34,8 @@ For this demo we will use a free API that is hosted at http://api.icndb.com.
 This particular API returns jokes about the famous western and kungfu guru Chuck Norris.
 At its core we can achieve a simple get request as follows :
 
-
+<br>
+<br>
 
 {% highlight python %}
 url = """http://api.icndb.com/jokes/random?"""
