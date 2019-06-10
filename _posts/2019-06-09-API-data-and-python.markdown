@@ -41,8 +41,8 @@ print(result.text)
 #{ "type": "success", "value": { "id": 467, "joke": "Chuck Norris can delete the Recycling Bin.", "categories": ["nerdy"] } }
 {% endhighlight %}  
 
-
-
+<br>
+<br>
 This is pretty good in terms of basic functionality and concepts, but what if we only care about the joke itself?
 We can see it is nested inside the value portion of the return dictionary. For this we can enlist the help of the JSON library.
 
