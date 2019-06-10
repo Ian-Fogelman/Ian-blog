@@ -43,8 +43,13 @@ print(result.text)
 
 <br>
 <br>
+
 This is pretty good in terms of basic functionality and concepts, but what if we only care about the joke itself?
 We can see it is nested inside the value portion of the return dictionary. For this we can enlist the help of the JSON library.
+
+
+<br>
+<br>
 
 
 {% highlight python %}
@@ -57,17 +62,16 @@ print(j['value']['joke'])
 {% endhighlight %}  
 
 
-
-
 Here we get a more appealing result just the actual joke text returned from the API.
 
-
+<br>
+<br>
 
 Lastly lets see if we can get this results into a pandas dataframe.
-
-
-
 I will write a for loop to call a GET request 5 times, parse the joke portion of the returned json data and append that to our dataframe.
+
+<br>
+<br>
 
 {% highlight python %}
 
