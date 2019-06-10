@@ -14,7 +14,7 @@ Today I will discuss how to retreive restful API data using python.
 
 In particular we will make use of the following libraries:
 
-requests,json and pandas all of the code in this post can be downloaded on my cloud anaconda page <a href="https://anaconda.org/IanFogelman/api-data-and-python/notebook">here</a>.
+requests,json and pandas all of the code in this post can be downloaded on my cloud anaconda page <a href="https://anaconda.org/IanFogelman/api-data-and-python/notebook" target="_blank">here</a>.
     
 First lets import our libraries, if you do not have these libraries, use the !pip install command to install them.
 
