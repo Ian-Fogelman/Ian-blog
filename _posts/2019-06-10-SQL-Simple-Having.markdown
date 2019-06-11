@@ -60,4 +60,17 @@ Lets pretend we have a dataset such as this:
     </table>
   </div>
   
+  We simple want to know what name has 3 or more entries in the table.
+  We can apply a having clause to achieve this Having clause will go outside of the group by as an addition selectivity measure  in our query.
+  
+{% highlight sql %}
+  SELECT [NAME], COUNT(*) AS RecordCount FROM #TEMP_A GROUP BY [NAME] HAVING COUNT(*) >= 3
+{% endhighlight %}  
+
+
+
+  
+  
+  
+  
   
