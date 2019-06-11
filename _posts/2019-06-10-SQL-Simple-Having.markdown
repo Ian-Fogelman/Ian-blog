@@ -12,7 +12,7 @@ author: # Add name author (optional)
 
 Today I will dicuss a way to filter your aggregated data, this is done by the use of a not so often used query keyword <strong> Having </strong>.
 <br >
-The whole solution can be viewed at this <a href="https://rextester.com/MIWL74883" target="_blank">RexTester</a>.
+The whole solution can be viewed at this <a href="https://rextester.com/MIWL74883" target="_blank"> RexTester</a>.
 
 <br>
 <br>
