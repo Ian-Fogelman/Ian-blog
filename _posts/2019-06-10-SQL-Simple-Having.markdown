@@ -25,6 +25,9 @@ there are many other ways to achieve desired results such as CTE,Subquies and wi
 
 Lets pretend we have a dataset such as this:
 
+<br>
+<br>
+
   <div class="container-fluid">
     <table class="datatable table table-hover table-bordered">
       <thead>
