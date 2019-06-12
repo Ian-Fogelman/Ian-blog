@@ -33,7 +33,7 @@ import sqlite3
 <br>
 <br>
 
-I should mention we will be using cursors throughout the demo, think of a curosr as a worker thread, a layer between you and your database. In order to retrieve or create objects or data in your database you will need to use the cursor to handle those operations.
+I should mention we will be using cursors throughout the demo, think of a cursor as a worker thread, a layer between you and your database. In order to retrieve or create objects or data in your database you will need to use the cursor to handle those operations.
 
 <br>
 <br>
