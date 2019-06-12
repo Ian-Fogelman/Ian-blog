@@ -10,7 +10,7 @@ datatable: true
 author: # Add name author (optional)
 ---
 
-Today I will be covering using SQLite in conjuction with Python you can find this notebook <here>.
+Today I will be covering using SQLite in conjuction with Python you can find this notebook <a href="https://anaconda.org/IanFogelman/sqlite-and-python/notebook" target="_blank"> here </a>.
 SQLite is pretty much the most light weight database backend around, it is easy to setup and use and dosent come with much of the overhead of other DBMS. It has a limited number of data types available, but if you can be creative in you storage requirements it can be a great solution. I recomend downloading a SQLite browser tool <here> to help strucutre of what we will be creating.
 
 <br>
@@ -84,5 +84,17 @@ Notice the <strong> conn.commit() </strong> this will be required before any ope
 
 If we go back to our database we can see the record inside.
 
+<br>
+<br>
 
+Lastly lets query the database table from our script and print the results. To do this we will once again leverage a curosr.
 
+<br>
+<br>
+
+{% highlight python %}
+cursor = conn.execute("SELECT first_name,last_name salary from USER")
+for row in cursor:
+    print("first_name : ", row[0])
+    print("last_name : ", row[1])
+{% endhighlight %} 
