@@ -11,7 +11,7 @@ author: # Add name author (optional)
 ---
 
 Today I will be covering using SQLite in conjuction with Python you can find this notebook <a href="https://anaconda.org/IanFogelman/sqlite-and-python/notebook" target="_blank"> here </a>.
-SQLite is pretty much the most light weight database backend around, it is easy to setup and use and dosent come with much of the overhead of other DBMS. It has a limited number of data types available, but if you can be creative in you storage requirements it can be a great solution. I recomend downloading a <a href="https://sqlitebrowser.org/dl/" target=_blank >SQLite browser tool </a>  to help strucutre of what we will be creating.
+SQLite is pretty much the most light weight database backend around, it is easy to setup and use and dosent come with much of the overhead of other DBMS. It has a limited number of data types available, but if you can be creative in you storage requirements it can be a great solution. I recomend downloading a <a href="https://sqlitebrowser.org/dl/" target=_blank >SQLite browser tool </a>  to help see the strucutre of what we will be creating.
 
 <br>
 <br>
