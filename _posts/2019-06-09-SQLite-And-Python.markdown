@@ -89,13 +89,13 @@ If we go back to our database we can see the record inside.
 <br>
 <br>
 
-Lastly lets query the database table from our script and print the results. To do this we will once again leverage a curosr.
+Lastly lets query the database table from our script and print the results. To do this we will once again leverage a cursor.
 
 <br>
 <br>
 
 {% highlight python %}
-cursor = conn.execute("SELECT first_name,last_name salary from USER")
+cursor = conn.execute("SELECT first_name,last_name from USER")
 for row in cursor:
     print("first_name : ", row[0])
     print("last_name : ", row[1])
