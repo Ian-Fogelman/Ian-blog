@@ -13,13 +13,12 @@ author: # Add name author (optional)
 Today I will be covering using SQLite in conjuction with Python you can find this notebook <here>.
 SQLite is pretty much the most light weight database backend around, it is easy to setup and use and dosent come with much of the overhead of other DBMS. It has a limited number of data types available, but if you can be creative in you storage requirements it can be a great solution. I recomend downloading a SQLite browser tool <here> to help strucutre of what we will be creating.
 
-< br >
-< br >
-
+<br>
+<br>
  ![SQLite Browser](/assets/screenshot.jpg)
  
-< br >
-< br >
+<br>
+<br>
 
 Firstly lets import our modules:
 
@@ -31,13 +30,13 @@ import sqlite3
 
 {% endhighlight %}  
 
-< br >
-< br >
+<br>
+<br>
 
 I should mention we will be using cursors throughout the demo, think of a curosr as a worker thread, a layer between you and your database. In order to retrieve or create objects or data in your database you will need to use the cursor to handle those operations.
 
-< br >
-< br >
+<br>
+<br>
 
 First lets define the name of our database, in this case I am going to use "example.db" as the database name.
 
@@ -45,8 +44,8 @@ First lets define the name of our database, in this case I am going to use "exam
 conn = sqlite3.connect('example.db')
 {% endhighlight %}  
 
-< br >
-< br >
+<br>
+<br>
 
 This conn will be used in conjection with a cursor to perform work in our example.db.
 Next lets create a table inside our database called User
@@ -61,13 +60,13 @@ conn.commit()
 conn.close()
 {% endhighlight %} 
 
-< br >
-< br >  
+<br>
+<br>
 
 The table has been created, lets insert our first row of data.
 
-< br >
-< br >  
+<br>
+<br> 
 
 {% highlight python %}
 c = conn.cursor()
@@ -75,13 +74,13 @@ c.execute("INSERT INTO USER (first_name, last_name) VALUES ('Ian','Fogelman')")
 conn.commit()
 {% endhighlight %} 
 
-< br >
-< br >  
+<br>
+<br> 
 
 Notice the <strong> conn.commit() </strong> this will be required before any operations can be saved to a database.
 
-< br >
-< br > 
+<br>
+<br>
 
 If we go back to our database we can see the record inside.
 
