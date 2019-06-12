@@ -15,7 +15,7 @@ SQLite is pretty much the most light weight database backend around, it is easy 
 
 <br>
 <br>
- ![SQLite Browser](/assets/screenshot.jpg)
+ ![SQLite Browser](/assets/img/SQLite001.PNG)
  
 <br>
 <br>
@@ -84,6 +84,8 @@ Notice the <strong> conn.commit() </strong> this will be required before any ope
 
 If we go back to our database we can see the record inside.
 
+ ![SQLite Browser](/assets/img/SQLite002.PNG)
+ 
 <br>
 <br>
 
