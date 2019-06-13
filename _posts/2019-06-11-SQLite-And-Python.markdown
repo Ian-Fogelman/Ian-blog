@@ -3,7 +3,7 @@ layout: post
 title:  SQLite-And-Python
 date:   2019-06-11
 description: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. # Add post description (optional)
-img: py.png # Add image post (optional)
+img: py.jpg #py.png # Add image post (optional)
 tags: [SQL, SQLite, Python, Pandas]
 
 datatable: true
