@@ -46,7 +46,7 @@ aside h3 {
 <ol class="post-card-box clearfix">
   {% for post in paginator.posts %}
   <li>
-    <aside>
+    <aside class="csstransforms">
     <div class="post-card">
       <a href="{{post.url | prepend: site.baseurl}}" class="post-card-image" style="background-image: url( {{ "/assets/img/" | prepend: site.baseurl | append : post.img}} )">
       </a>
