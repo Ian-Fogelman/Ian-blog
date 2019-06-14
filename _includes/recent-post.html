@@ -3,7 +3,7 @@
   <div class="recent-list">
     {% for post in site.posts offset:0 limit:4 %}
       {% if post.title %}
-        <div class="container"><a href="{{ root_url }}{{ post.url | prepend: site.baseurl }}" class="recent-item" style="background: url({{"/assets/img/" | prepend: site.baseurl | append : post.img}}) center no-repeat; background-size: cover;"><span style="color:#222;border-radius: 10px;background: #BADA55;">{{ post.title }}</span></a></div>
+        <a href="{{ root_url }}{{ post.url | prepend: site.baseurl }}" class="recent-item" style="background: url({{"/assets/img/" | prepend: site.baseurl | append : post.img}}) center no-repeat; background-size: cover;"><div class="container"><span style="color:#222;border-radius: 10px;background: #BADA55;">{{ post.title }}</span></div></a>
       {% endif %}
     {% endfor %}
   </div>
