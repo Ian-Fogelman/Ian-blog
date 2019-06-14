@@ -1,11 +1,24 @@
 ---
 layout: home-page
 ---
+<style>
+.headerRot
+{
+    margin: 0;
+    width: 0;
+    white-space: nowrap;
+    position: absolute;
+    text-align: left;
+    transform-origin: bottom; 
+    margin-top: 280px;
+    transform: rotate(270deg);
+}
+</style>
 
 <ol class="post-card-box clearfix">
   {% for post in paginator.posts %}
   <li>
-    <div class="post-card">
+    <div class="post-card headerRot">
       <a href="{{post.url | prepend: site.baseurl}}" class="post-card-image" style="background-image: url( {{ "/assets/img/" | prepend: site.baseurl | append : post.img}} )">
       </a>
 
