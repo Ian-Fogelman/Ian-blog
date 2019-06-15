@@ -17,7 +17,7 @@ a uniform language to extract data to different object types is what makes linq 
 <br>
 <br>
 
-The example for this post can be found <a href="https://rextester.com/KSVGS52268"> here </a>.
+The example for this post can be found <a href="https://rextester.com/KSVGS52268" target="_blank"> here </a>.
 
 <br>
 <br>
