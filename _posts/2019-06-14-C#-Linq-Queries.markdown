@@ -7,7 +7,7 @@ img: cs.png # Add image post (optional)
 tags: [c#, Linq]
 
 datatable: true
-author: # Ad
+author: # Ad 431394E5-6F9C-443C-B24F-5D6518D0FA05 https://rextester.com/KSVGS52268
 ---
 
 A super valueable skill that is worth knowing and practicing on a weekly basis is Language Integrated Query or LinQ statements. 
