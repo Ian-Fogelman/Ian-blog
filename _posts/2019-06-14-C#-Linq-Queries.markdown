@@ -3,7 +3,7 @@ layout: post
 title:  C#-Linq-Queries
 date:   2019-06-14 13:32:20 +0300
 description: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. # Add post description (optional)
-img: https://images.unsplash.com/photo-1528372444006-1bfc81acab02?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60 #cs.png # Add image post (optional)
+img: cs.png # Add image post (optional)
 tags: [c#, Linq]
 
 datatable: true
