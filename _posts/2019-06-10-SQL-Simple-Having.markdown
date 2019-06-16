@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  SQL-Simple-Having
+title:  SQL Simple Having
 date:   2019-06-10 
 description: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. # Add post description (optional)
 img: sq.jpg # Add image post (optional)
