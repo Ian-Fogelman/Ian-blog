@@ -17,7 +17,7 @@ Instead of looking specifically for an exact match on a name you can specify a w
 <br>
 <br>
 
-Lets take the following dataset into consideration:
+Lets take the following table, <strong>classinfo</strong> into consideration:
 
   <div class="container-fluid">
     <table class="datatable table table-hover table-bordered">
@@ -50,7 +50,49 @@ Lets take the following dataset into consideration:
           <td>4432 Etcher Rd</td>
           <td>Science</td>
         </tr>
+        <tr>
+          <td>4</td>
+          <td>Chase</td>
+          <td>9332 Green St</td>
+          <td>Music</td>
+        </tr>
       </tbody>
     </table>
   </div>
   
+Lets suppose we want to get every record that is enrolled in a course whose first letter begins with <strong>"M"</strong>.
+{% highlight sql %}
+SELECT * FROM CLASSINFO WHERE CLASS LIKE 'M%'
+{% endhighlight %}  
+<br>
+<br>
+
+If we want to match on an entire word we use a double percent such as
+
+<br>
+<br>
+{% highlight sql %}
+SELECT * FROM CLASSINFO WHERE CLASS LIKE '%MUSIC%'
+{% endhighlight %}  
+<br>
+<br>
+
+We can also match on multiple characters the following, here we will return records that start with M or S.
+
+<br>
+<br>
+
+{% highlight sql %}
+SELECT * FROM CLASSINFO WHERE CLASS LIKE '[MS]%'
+{% endhighlight %}  
+<br>
+<br>
+
+Finally we can also skip characters if we are only interested in the third character for instance in the address field.
+We can use the <strong> _ </strong> character. The following will return records whos 3rd character in address is 3.
+
+<br>
+<br>
+{% highlight sql %}
+SELECT * FROM CLASSINFO WHERE ADDRESS  LIKE '__3%'
+{% endhighlight %}  
