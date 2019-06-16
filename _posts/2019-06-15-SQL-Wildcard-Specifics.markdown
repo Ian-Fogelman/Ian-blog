@@ -19,6 +19,9 @@ Instead of looking specifically for an exact match on a name you can specify a w
 
 Lets take the following table, <strong>classinfo</strong> into consideration:
 
+<br>
+<br>
+
   <div class="container-fluid">
     <table class="datatable table table-hover table-bordered">
       <thead>
