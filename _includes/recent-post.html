@@ -8,6 +8,9 @@
       {% if post.title == "SQL WILD CARDS" %}
       <h1>123</h1>
       {% endif %}
+       {% ifequal post.title "SQL WILD CARDS" %}
+        <h1>Just now!</h1>
+      {% endifequal %}
     {% endfor %}
   </div>
 </div> <!-- End Recent-Box -->
