@@ -5,6 +5,9 @@
       {% if post.title %}
         <a href="{{ root_url }}{{ post.url | prepend: site.baseurl }}" class="recent-item" style="background: url({{"/assets/img/" | prepend: site.baseurl | append : post.img}}) center no-repeat; background-size: cover;"><span style="color:#fff;width:100%;text-align:center;border-radius: 10px;background: #b44242;">{{ post.title }}</span></a>
       {% endif %}
+      {% if post.title == "SQL WILD CARDS" %}
+      <h1>123</h1>
+      {% endif %}
     {% endfor %}
   </div>
 </div> <!-- End Recent-Box -->
