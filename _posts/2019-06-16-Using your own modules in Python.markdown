@@ -39,7 +39,7 @@ mm.add_nums(2,2)
 Full Example in this repl.
 Click the files button in the top left corner to view all the files.
 
-![Repl Explanation](/assets/img/repl1.png)
+![Repl Explanation](/assets/img/repl1.PNG)
 <br>
 <br>
 
