@@ -14,7 +14,7 @@ In this blog post I will detail how you can abstract your custom defined methods
 This strategy can help save space in your jupyter notebook and can help clean up logic to make your debugging more easy.
 In my experience it is always best to abstract as much as possible, it alleiviates heart aches caused by coding mistakes and can help your development timeline.
 
-x
+
 <br>
 <br>
 
