@@ -4,7 +4,7 @@ title:  Using your own modules in Python
 date:   2019-06-16
 description: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. # Add post description (optional)
 img: py.jpg # Add image post (optional)
-tags: [Python, Modules, Import]
+tags: [Python, Modules, Import,Custom]
 
 datatable: true
 author: # Add name author (optional)
