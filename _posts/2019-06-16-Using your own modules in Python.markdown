@@ -3,7 +3,7 @@ layout: post
 title:  Using your own modules in Python
 date:   2019-06-16
 description: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. # Add post description (optional)
-img: py.jpg # Add image post (optional)
+img: py.png # Add image post (optional)
 tags: [Python, Modules, Import,Custom]
 
 datatable: true
@@ -37,8 +37,11 @@ mm.add_nums(2,2)
 <br>
 
 Full Example in this repl.
+Click the files button in the top left corner to view all the files.
 
+![Repl Explanation](/assets/img/screenshot.jpg)
 <br>
 <br>
+
 
 <iframe height="400px" width="100%" src="https://repl.it/@IanFogelman/FrillyWellwornDownload?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
