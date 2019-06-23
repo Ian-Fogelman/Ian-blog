@@ -21,7 +21,32 @@ This endpoint returns the current position of the ISS in lat / long format.
 <br>
 <br>
 
+Before we are able to do this we must prepare our SQL enviorment, you might lack permissions to do this on a production instance, but a local SQL express version of SQL server will do just fine if that is the case.
 
+
+sp_configure 'show advanced options', 1 
+GO 
+RECONFIGURE; 
+GO 
+sp_configure 'Ole Automation Procedures', 1 
+GO 
+RECONFIGURE; 
+GO 
+sp_configure 'show advanced options', 1 
+GO 
+RECONFIGURE;
+
+<br>
+<br>
+
+Next we will declare variables for the endpoint, response and data.
+You can change the operation type to POST data for instance, in this demo we will simply be using GET.
+
+<br>
+<br>
+
+
+{% highlight SQL %}
 DECLARE @authHeader NVARCHAR(64);
 DECLARE @contentType NVARCHAR(64);
 DECLARE @postData NVARCHAR(2000);
@@ -49,7 +74,7 @@ IF @ret <> 0 RAISERROR('Unable to open HTTP connection.', 10, 1);
 EXEC @ret = sp_OAMethod @token, 'open', NULL, 'get', @url, 'false';
 EXEC @ret = sp_OAMethod @token, 'setRequestHeader', NULL, 'Authentication', @authHeader;
 EXEC @ret = sp_OAMethod @token, 'setRequestHeader', NULL, 'Content-type', 'application/json';
-EXEC @ret = sp_OAMethod @token, 'send', NULL, NULL;
+EXEC @ret = sp_OAMethod @token, 'send', NULL, NULL; -- IF YOUR POSTING, CHANGE THE LAST NULL TO @postData
 
 -- Handle the response.
 EXEC @ret = sp_OAGetProperty @token, 'status', @status OUT;
@@ -63,4 +88,12 @@ PRINT 'Response text: ' + @responseText;
 -- Close the connection.
 EXEC @ret = sp_OADestroy @token;
 IF @ret <> 0 RAISERROR('Unable to close HTTP connection.', 10, 1);
+{% endhighlight %} 
+
+<br>
+<br>
+
+As you can see in the print window we will have our response from the ISS, pretty neat!
+
+
 
