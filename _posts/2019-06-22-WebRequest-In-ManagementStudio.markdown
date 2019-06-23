@@ -23,6 +23,9 @@ This endpoint returns the current position of the ISS in lat / long format.
 
 Before we are able to do this we must prepare our SQL enviorment, you might lack permissions to do this on a production instance, but a local SQL express version of SQL server will do just fine if that is the case.
 
+<br>
+<br>
+
 {% highlight SQL %}
 sp_configure 'show advanced options', 1 
 GO 
