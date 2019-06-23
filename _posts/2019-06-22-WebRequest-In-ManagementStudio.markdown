@@ -15,7 +15,7 @@ I would consider Python requests library in combination with SQLalchemy for a ta
 <br>
 <br>
 
-Lets take a look at the following API endpoint : <strong > http://api.open-notify.org/iss-now.json </strong>.
+Lets take a look at the following API endpoint : <strong > http://api.open-notify.org/iss-now.json</strong>.
 <br>
 This endpoint returns the current position of the ISS in lat / long format.
 
