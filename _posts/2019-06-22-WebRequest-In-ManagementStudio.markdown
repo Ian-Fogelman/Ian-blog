@@ -96,4 +96,9 @@ IF @ret <> 0 RAISERROR('Unable to close HTTP connection.', 10, 1);
 As you can see in the print window we will have our response from the ISS, pretty neat!
 
 
+<br>
+<br>
+
+
+![My helpful screenshot](/assets/img/WA001.PNG)
 
