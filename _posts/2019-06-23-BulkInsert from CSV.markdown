@@ -3,7 +3,7 @@ layout: post
 title:  Bulk Insert From CSV
 date:   2019-06-23
 description: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. # Add post description (optional)
-img: post-3.jpg # Add image post (optional)
+img: sq.jpg # Add image post (optional)
 tags: [SQL, CSV, BulkInsert]
 
 datatable: true
