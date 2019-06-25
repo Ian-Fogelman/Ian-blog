@@ -23,6 +23,9 @@ First step is to install the DQS client, you can search for data quality server 
 
 Lets take a simple set of data as follows :
 
+<br>
+<br>
+
 <div class="container-fluid">
     <table class="datatable table table-hover table-bordered">
       <thead>
@@ -63,3 +66,35 @@ Lets take a simple set of data as follows :
       </tbody>
     </table>
   </div>
+
+
+<br>
+<br>
+
+Suppose that we want to enforce a business rule that each first name must be at least 3 characters.
+We will solve this using a DQS approach.
+
+![00](/assets/img/DQS00.jpg)
+
+<br>
+<br>
+Create Knowledge Base
+<br>
+<br>
+![0](/assets/img/DQS0.jpg)
+
+<br>
+<br>
+Create New Domain
+<br>
+<br>
+
+![1](/assets/img/DQS1.jpg)
+![2](/assets/img/DQS2.jpg)
+![3](/assets/img/DQS3.jpg)
+![4](/assets/img/DQS4.jpg)
+![5](/assets/img/DQS5.jpg)
+![6](/assets/img/DQS6.jpg)
+![7](/assets/img/DQS7.jpg)
+![8](/assets/img/DQS8.jpg)
+![9](/assets/img/DQS9.jpg)
