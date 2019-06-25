@@ -16,7 +16,9 @@ managed by someone other than a DBA or developer and help improve your database'
 <br>
 <br>
 
-First step is to install the DQS client, you can search for data quality server installer on your machine running your SQL instance. Once you follow the prompts and install you should to able to access to DQS client.
+First step is to install the DQS client, you can search for data quality server installer on your machine running your SQL instance. 
+<br>
+Once you follow the prompts and install you should to able to access to DQS client.
 
 <br>
 <br>
@@ -76,6 +78,7 @@ Lets take a simple set of data as follows :
 <br>
 
 Suppose that we want to enforce a business rule that each first name must be 3 characters.
+<br>
 We will solve this using a DQS approach.
 
 
@@ -105,7 +108,8 @@ Next click domain rules and enter Length3 for name and add a rule of length equa
 ![3](/assets/img/DQS3.png)
 <br>
 <br>
-Now go to data quality projects, New Data Quality Project
+Now go to data quality projects, New Data Quality Project.
+<br>
 Name the project and select the knowledge base created, for this project we will be cleansing.
 <br>
 <br>
@@ -130,7 +134,9 @@ After the task is complete you can see how many rows of data passed and how many
 ![7](/assets/img/DQS7.png)
 <br>
 <br>
-On the following screen we can see which records failed, because the length of the first name field was less than 3 which we originally stated in the criteria of the domain. You can approve and reject.
+On the following screen we can see which records failed, because the length of the first name field was less than 3.
+<br>
+Which we originally stated in the criteria of the domain. You can approve and reject.
 <br>
 <br>
 ![8](/assets/img/DQS8.png)
