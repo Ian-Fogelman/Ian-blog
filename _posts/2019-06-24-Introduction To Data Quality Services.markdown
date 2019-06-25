@@ -93,7 +93,13 @@ Create New Domain
 ![2](/assets/img/DQS2.png)
 <br>
 <br>
-Input a name and a description for your domain, Click publish
+Input a name and a description for your domain
+<br>
+<br>
+Next click domain rules and enter Length3 for name and add a rule of length equal to 3
+<br>
+<br>
+![X](/assets/img/DQX.PNG)
 <br>
 <br>
 ![3](/assets/img/DQS3.png)
