@@ -3,7 +3,7 @@ layout: post
 title:  An introduction to Data Quality Services
 date:   2019-06-24
 description: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. # Add post description (optional)
-img: post-3.jpg # Add image post (optional)
+img: sq.jpg # Add image post (optional)
 tags: [DQS, SQL, Data Cleasing]
 
 datatable: true
@@ -74,14 +74,14 @@ Lets take a simple set of data as follows :
 Suppose that we want to enforce a business rule that each first name must be at least 3 characters.
 We will solve this using a DQS approach.
 
-![00](/assets/img/DQS00.jpg)
+![00](/assets/img/DQS00.PNG)
 
 <br>
 <br>
 Create Knowledge Base
 <br>
 <br>
-![0](/assets/img/DQS0.jpg)
+![0](/assets/img/DQS0.png)
 
 <br>
 <br>
@@ -89,12 +89,12 @@ Create New Domain
 <br>
 <br>
 
-![1](/assets/img/DQS1.jpg)
-![2](/assets/img/DQS2.jpg)
-![3](/assets/img/DQS3.jpg)
-![4](/assets/img/DQS4.jpg)
-![5](/assets/img/DQS5.jpg)
-![6](/assets/img/DQS6.jpg)
-![7](/assets/img/DQS7.jpg)
-![8](/assets/img/DQS8.jpg)
-![9](/assets/img/DQS9.jpg)
+![1](/assets/img/DQS1.png)
+![2](/assets/img/DQS2.png)
+![3](/assets/img/DQS3.png)
+![4](/assets/img/DQS4.png)
+![5](/assets/img/DQS5.png)
+![6](/assets/img/DQS6.png)
+![7](/assets/img/DQS7.png)
+![8](/assets/img/DQS8.png)
+![9](/assets/img/DQS9.png)
