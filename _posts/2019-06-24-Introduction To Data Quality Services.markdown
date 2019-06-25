@@ -20,6 +20,10 @@ First step is to install the DQS client, you can search for data quality server 
 
 <br>
 <br>
+![00](/assets/img/DQS00.PNG)
+
+<br>
+<br>
 
 Lets take a simple set of data as follows :
 
@@ -74,27 +78,52 @@ Lets take a simple set of data as follows :
 Suppose that we want to enforce a business rule that each first name must be at least 3 characters.
 We will solve this using a DQS approach.
 
-![00](/assets/img/DQS00.PNG)
 
 <br>
 <br>
-Create Knowledge Base
+First step is to create a knowledge base
 <br>
 <br>
-![0](/assets/img/DQS0.png)
-
+![1](/assets/img/DQS1.png)
 <br>
 <br>
 Create New Domain
 <br>
 <br>
-
-![1](/assets/img/DQS1.png)
 ![2](/assets/img/DQS2.png)
+<br>
+<br>
+Input a name and a description for your domain, Click publish
+<br>
+<br>
 ![3](/assets/img/DQS3.png)
+<br>
+<br>
+Now go to data quality projects, New Data Quality Project
+Name the project and select the knowledge base created, for this project we will be cleansing.
+<br>
+<br>
 ![4](/assets/img/DQS4.png)
+<br>
+<br>
+On the next screen match each field name with a domain, in this case we only have first name.
+<br>
+<br>
 ![5](/assets/img/DQS5.png)
+<br>
+<br>
 ![6](/assets/img/DQS6.png)
+<br>
+<br>
 ![7](/assets/img/DQS7.png)
+<br>
+<br>
 ![8](/assets/img/DQS8.png)
+<br>
+<br>
 ![9](/assets/img/DQS9.png)
+<br>
+<br>
+![0](/assets/img/DQS0.png)
+<br>
+<br>
