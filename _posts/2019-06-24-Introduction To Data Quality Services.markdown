@@ -157,3 +157,6 @@ Once clicking finish , we can view the data in the Output table in the database 
 ![0](/assets/img/DQS0.png)
 <br>
 <br>
+
+DQS can be used in combination with other technology such as SSIS/PowerBi/SSRS and the process of reporting data issues or automatically fixing them becomes much more interesting!
+
