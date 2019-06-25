@@ -24,7 +24,7 @@ CREATE TABLE #TMP
 )
 
 BULK INSERT  #TMP
-FROM 'C:\Users\Ian\Documents\ClientList.csv'
+FROM 'C:\Users\XXX\YYYY\MyData.csv'
 WITH (DATAFILETYPE = 'WIDECHAR',FIELDTERMINATOR = ',', ROWTERMINATOR = '\N');
 GO
 
