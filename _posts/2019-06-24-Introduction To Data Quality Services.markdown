@@ -119,7 +119,7 @@ Name the project and select the knowledge base created, for this project we will
 ![4](/assets/img/DQS4.png)
 <br>
 <br>
-On the next screen match each field name with a domain, in this case we only have first name.
+On the next screen match each field name with a domain, in this case we only have first name, click next.
 <br>
 <br>
 ![5](/assets/img/DQS5.png)
