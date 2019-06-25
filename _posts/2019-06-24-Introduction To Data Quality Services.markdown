@@ -112,16 +112,31 @@ On the next screen match each field name with a domain, in this case we only hav
 ![5](/assets/img/DQS5.png)
 <br>
 <br>
+Click Start
+<br>
+<br>
 ![6](/assets/img/DQS6.png)
+<br>
+<br>
+After the task is complete you can see how many rows of data passed and how many were invalid.
 <br>
 <br>
 ![7](/assets/img/DQS7.png)
 <br>
 <br>
+On the following screen we can see which records failed, because the length of the first name field was less than 3 which we originally stated in the criteria of the domain. You can approve and reject.
+<br>
+<br>
 ![8](/assets/img/DQS8.png)
 <br>
 <br>
+On the last screen we can Export our results to a table in the database by defining the table name and clicking export.
+<br>
+<br>
 ![9](/assets/img/DQS9.png)
+<br>
+<br>
+Once clicking finish , we can view the data in Output to see full results
 <br>
 <br>
 ![0](/assets/img/DQS0.png)
