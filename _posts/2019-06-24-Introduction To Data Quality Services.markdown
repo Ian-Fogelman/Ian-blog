@@ -2,7 +2,7 @@
 layout: post
 title:  An introduction to Data Quality Services
 date:   2019-06-24
-description: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. # Add post description (optional)
+description: How to deploy and configure a DQS instance.# Add post description (optional)
 img: sq.jpg # Add image post (optional)
 tags: [DQS, SQL, Data Cleasing]
 
