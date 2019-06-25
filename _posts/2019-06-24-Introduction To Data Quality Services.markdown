@@ -90,10 +90,10 @@ First step is to create a knowledge base
 Create New Domain
 <br>
 <br>
-![2](/assets/img/DQS2.png)
-<br>
-<br>
 Input a name and a description for your domain
+<br>
+<br>
+![2](/assets/img/DQS2.png)
 <br>
 <br>
 Next click domain rules and enter Length3 for name and add a rule of length equal to 3
