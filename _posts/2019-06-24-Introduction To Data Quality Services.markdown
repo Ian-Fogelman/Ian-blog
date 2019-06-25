@@ -16,7 +16,7 @@ managed by someone other than a DBA or developer and help improve your database'
 <br>
 <br>
 
-First step is to install the DQS client, you can search for data quality server installer on your machine running your SQL instance.
+First step is to install the DQS client, you can search for data quality server installer on your machine running your SQL instance. Once you follow the prompts and install you should to able to access to DQS client.
 
 <br>
 <br>
