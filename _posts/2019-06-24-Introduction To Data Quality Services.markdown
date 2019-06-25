@@ -99,7 +99,7 @@ Input a name and a description for your domain
 Next click domain rules and enter Length3 for name and add a rule of length equal to 3
 <br>
 <br>
-![X](/assets/img/DQX.png)
+![X](/assets/img/DQSX.PNG)
 <br>
 <br>
 ![3](/assets/img/DQS3.png)
