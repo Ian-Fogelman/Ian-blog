@@ -75,7 +75,7 @@ Lets take a simple set of data as follows :
 <br>
 <br>
 
-Suppose that we want to enforce a business rule that each first name must be at least 3 characters.
+Suppose that we want to enforce a business rule that each first name must be 3 characters.
 We will solve this using a DQS approach.
 
 
