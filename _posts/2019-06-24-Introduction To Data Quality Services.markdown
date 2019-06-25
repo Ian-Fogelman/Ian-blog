@@ -105,6 +105,9 @@ Next click domain rules and enter Length3 for name and add a rule of length equa
 ![X](/assets/img/DQSX.PNG)
 <br>
 <br>
+Click publish
+<br>
+<br>
 ![3](/assets/img/DQS3.png)
 <br>
 <br>
