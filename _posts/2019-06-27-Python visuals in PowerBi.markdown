@@ -86,10 +86,13 @@ If you get errors just use pip to install the module it indicates as missing
 ![](/assets/img/Pb4.PNG)
 <br>
 <br>
+Click the run button, you should see the data pulled and displayed in your Python visual!
+<br>
+<br>
 ![](/assets/img/Pb5.PNG)
 <br>
 <br>
-Click the run button, you should see the data pulled and displayed in your Python visual!
+The plot will be generated and displayed.
 <br>
 <br>
 ![](/assets/img/Pb6.PNG)
