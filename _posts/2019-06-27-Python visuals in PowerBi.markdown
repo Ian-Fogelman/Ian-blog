@@ -50,17 +50,12 @@ pullstockdata('6/27/2017','6/27/2018','GOOG')
 <br>
 <br>
 
-First lets open powerBI, pull any data into the report.
+First lets open powerBI,next get any dummy data you have and connect to it via csv file.
+<br>
+This data is not important because the real data will come from a pandas dataframe that we populate with our script.
 ![](/assets/img/Pb1.PNG)
 <br>
 <br>
-Next get any dummy data you have and connect to it via csv file.
-<br>
-<br>
-This data is not important because the real data will come from a pandas dataframe that we populate with our script.
-<br>
-<br>
-
 
 Next drag the python visual to the canvas of the report.
 ![](/assets/img/Pb2.PNG)
