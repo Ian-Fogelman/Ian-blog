@@ -52,7 +52,10 @@ pullstockdata('6/27/2017','6/27/2018','GOOG')
 
 First lets open powerBI,next get any dummy data you have and connect to it via csv file.
 <br>
+<br>
 This data is not important because the real data will come from a pandas dataframe that we populate with our script.
+<br>
+<br>
 ![](/assets/img/Pb1.PNG)
 <br>
 <br>
