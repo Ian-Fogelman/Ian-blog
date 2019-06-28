@@ -61,14 +61,20 @@ This data is not important because the real data will come from a pandas datafra
 <br>
 
 Next drag the python visual to the canvas of the report.
+<br>
+<br>
 ![](/assets/img/Pb2.PNG)
 <br>
 <br>
 You may be prompted to enabled scripting, click Enable.
+<br>
+<br>
 ![](/assets/img/Pb3.PNG)
 <br>
 <br>
 Now drag any data field to the values field while the Python visual is highted.
+<br>
+<br>
 ![](/assets/img/Pb4.PNG)
 <br>
 <br>
