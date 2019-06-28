@@ -12,6 +12,10 @@ author: # Add name author (optional)
 
 
 Today I will discuss how to pull data live with a python script and then display that data in a powerBi python visual.
+<br>
+We will be pulling stock market data with the method, which accepts a start date, end date and stock ticker symbol.
+<br>
+<br>
 
 {% highlight Python %}
 import pandas as pd
@@ -42,3 +46,8 @@ def pullstockdata(start,end,symbol):
     plt.legend()
     plt.show()
 {% endhighlight %}   
+
+<br>
+<br>
+
+
