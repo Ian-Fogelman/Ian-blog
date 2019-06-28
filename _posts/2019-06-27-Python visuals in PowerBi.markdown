@@ -45,22 +45,39 @@ def pullstockdata(start,end,symbol):
     mavg150.plot(label='mavg150')
     plt.legend()
     plt.show()
+    
+pullstockdata('6/27/2017','6/27/2018','GOOG')
 {% endhighlight %}   
 
 <br>
 <br>
 
 First lets open powerBI, pull any data into the report.
+![](/assets/img/Pb1.PNG)
 
 Next get any dummy data you have and connect to it via csv file.
 <br>
 This data is not important because the real data will come from a pandas dataframe that we populate with our script.
 <br>
 
+
 Next drag the python visual to the canvas of the report.
-
-Copy and paste the script to the code dialogue, you will need to ensure that each module is install on your machine.
-
+![](/assets/img/Pb2.PNG)
+<br>
+You may be prompted to enabled scripting, click Enable.
+![](/assets/img/Pb3.PNG)
+<br>
+Now drag any data field to the values field while the Python visual is highted.
+![](/assets/img/Pb4.PNG)
+<br>
+Copy and paste the script to the code dialogue, you will need to ensure that each module is installed on your machine.
+<br>
+![](/assets/img/Pb4.PNG)
+<br>
+If you get errors just use pip to install the module it indicates as missing
+<br>
+![](/assets/img/Pb5.PNG)
+<br>
 Click the run button, you should see the data pulled and displayed in your Python visual!
 
 
