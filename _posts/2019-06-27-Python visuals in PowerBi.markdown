@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  On a meeting with adventures
+title:  Python visuals in PowerBi
 date:   2019-06-27
 description: How to use python to auto pull data and display in PowerBi # Add post description (optional)
 img: pb.png # Add image post (optional)
