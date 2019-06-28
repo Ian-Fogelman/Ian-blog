@@ -90,6 +90,9 @@ If you get errors just use pip to install the module it indicates as missing
 <br>
 <br>
 Click the run button, you should see the data pulled and displayed in your Python visual!
+<br>
+<br>
+![](/assets/img/Pb6.PNG)
 
 
 
