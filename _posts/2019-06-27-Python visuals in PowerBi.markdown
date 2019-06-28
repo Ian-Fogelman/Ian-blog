@@ -50,4 +50,21 @@ def pullstockdata(start,end,symbol):
 <br>
 <br>
 
+First lets open powerBI, pull any data into the report.
+
+Next get any dummy data you have and connect to it via csv file.
+<br>
+This data is not important because the real data will come from a pandas dataframe that we populate with our script.
+<br>
+
+Next drag the python visual to the canvas of the report.
+
+Copy and paste the script to the code dialogue, you will need to ensure that each module is install on your machine.
+
+Click the run button, you should see the data pulled and displayed in your Python visual!
+
+
+
+
+
 
