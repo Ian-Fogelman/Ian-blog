@@ -80,11 +80,10 @@ Now drag any data field to the values field while the Python visual is highted.
 <br>
 Copy and paste the script to the code dialogue, you will need to ensure that each module is installed on your machine.
 <br>
+If you get errors just use pip to install the module it indicates as missing
+<br>
 <br>
 ![](/assets/img/Pb4.PNG)
-<br>
-<br>
-If you get errors just use pip to install the module it indicates as missing
 <br>
 <br>
 ![](/assets/img/Pb5.PNG)
