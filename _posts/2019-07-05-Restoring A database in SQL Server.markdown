@@ -16,7 +16,7 @@ This can be done for a variety of reasons, if there is a critical error commited
 That scenario has only happened to me a couple of times in a production enviorment, I take care to approve all database updates and create table backups to avoid this situation.
 <br>
 <br>
-For this demo we will be pulling a sample database from https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=3&ved=2ahUKEwjksJX49Z7jAhVnRN8KHTmRD6gQFjACegQIBhAB&url=https%3A%2F%2Fgithub.com%2FMicrosoft%2Fsql-server-samples%2Freleases%2Fdownload%2Fadventureworks2012%2Fadventure-works-2012-dw-data-file.mdf&usg=AOvVaw31N3kiGC6iwsbcWwq6gcYP.
+For this demo we will be pulling a sample database from <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=3&ved=2ahUKEwjksJX49Z7jAhVnRN8KHTmRD6gQFjACegQIBhAB&url=https%3A%2F%2Fgithub.com%2FMicrosoft%2Fsql-server-samples%2Freleases%2Fdownload%2Fadventureworks2012%2Fadventure-works-2012-dw-data-file.mdf&usg=AOvVaw31N3kiGC6iwsbcWwq6gcYP">download </a>.
 The download should prompt when you navigate to the link.
 
 <br>
