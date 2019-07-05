@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  On a meeting with adventures
+title:  Restoring A database in SQL Server
 date:   2019-06-23
 description: A quick look at how to restore a database from a mdf file. # Add post description (optional)
 img: sq.jpg # Add image post (optional)
