@@ -64,10 +64,10 @@ Verify that the current File Path is the actual path to the MDF file.
 Now Click Ok.
 <br>
 <br>
-![](/assets/img/Restore5.PNG)
-<br>
-<br>
 Right click on databases and refresh, your new database should be in the database list now!
+<br>
+<br>
+![](/assets/img/Restore5.PNG)
 <br>
 <br>
 ![](/assets/img/Restore6.PNG)
