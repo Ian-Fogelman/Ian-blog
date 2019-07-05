@@ -21,7 +21,6 @@ The download should prompt when you navigate to the link.
 
 <br>
 <br>
-
 Next export the mdf and ldf files out of the zip file.
 <br>
 <br>
@@ -29,10 +28,14 @@ Now go to your SQL server Management Studio interface, right click Databases.
 <br>
 <br>
 Select Attach Database.
+<br>
+<br>
 ![](/assets/img/Restore1.PNG)
 <br>
 <br>
 You will be prompted with the Attach Database dialogue box.
+<br>
+<br>
 ![](/assets/img/Restore2.PNG)
 <br>
 <br>
@@ -65,6 +68,8 @@ Now Click Ok.
 <br>
 <br>
 ![](/assets/img/Restore5.PNG)
+<br>
+<br>
 Right click on databases and refresh, your new database should be in the database list now!
 <br>
 <br>
