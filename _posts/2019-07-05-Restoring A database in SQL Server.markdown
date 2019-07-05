@@ -3,7 +3,7 @@ layout: post
 title:  On a meeting with adventures
 date:   2019-06-23
 description: A quick look at how to restore a database from a mdf file. # Add post description (optional)
-img: sq.png # Add image post (optional)
+img: sq.jpg # Add image post (optional)
 tags: [SQL Server, Database backup, Database restore]
 
 datatable: true
