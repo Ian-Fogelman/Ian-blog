@@ -21,9 +21,6 @@ The download should prompt when you navigate to the link.
 
 <br>
 <br>
-Next export the mdf and ldf files out of the zip file.
-<br>
-<br>
 Now go to your SQL server Management Studio interface, right click Databases.
 <br>
 <br>
