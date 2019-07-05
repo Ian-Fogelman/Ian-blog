@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Restoring A database in SQL Server
-date:   2019-06-23
+date:   2019-07-05
 description: A quick look at how to restore a database from a mdf file. # Add post description (optional)
 img: sq.jpg # Add image post (optional)
 tags: [SQL Server, Database backup, Database restore]
