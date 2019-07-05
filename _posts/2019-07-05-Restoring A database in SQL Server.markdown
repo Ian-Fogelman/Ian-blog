@@ -17,7 +17,7 @@ That scenario has only happened to me a couple of times in a production enviorme
 <br>
 <br>
 For this demo we will be pulling a sample database called <a target="_blank" href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=3&ved=2ahUKEwjksJX49Z7jAhVnRN8KHTmRD6gQFjACegQIBhAB&url=https%3A%2F%2Fgithub.com%2FMicrosoft%2Fsql-server-samples%2Freleases%2Fdownload%2Fadventureworks2012%2Fadventure-works-2012-dw-data-file.mdf&usg=AOvVaw31N3kiGC6iwsbcWwq6gcYP"> Adventure Works DW 2012 </a>.
-The download should prompt when you navigate to the link.
+The download will prompt when you click the link.
 
 <br>
 <br>
