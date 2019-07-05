@@ -29,9 +29,11 @@ Now go to your SQL server Management Studio interface, right click Databases.
 <br>
 <br>
 Select Attach Database.
+![](/assets/img/Restore1.PNG)
 <br>
 <br>
 You will be prompted with the Attach Database dialogue box.
+![](/assets/img/Restore2.PNG)
 <br>
 <br>
 Click Add... 
@@ -40,7 +42,13 @@ Click Add...
 Now Navigate to where you extracted the Adventure Works MDF file.
 <br>
 <br>
+![](/assets/img/Restore3.PNG)
+<br>
+<br>
 You can remove the LDF from the file selection.
+<br>
+<br>
+![](/assets/img/Restore4.PNG)
 <br>
 <br>
 The default location for mdf files are similar to :
@@ -56,4 +64,8 @@ Verify that the current File Path is the actual path to the MDF file.
 Now Click Ok.
 <br>
 <br>
+![](/assets/img/Restore5.PNG)
 Right click on databases and refresh, your new database should be in the database list now!
+<br>
+<br>
+![](/assets/img/Restore6.PNG)
