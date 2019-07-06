@@ -71,3 +71,6 @@ Right click on databases and refresh, your new database should be in the databas
 <br>
 <br>
 ![](/assets/img/Restore6.PNG)
+<br>
+<br>
+The process is slightly different from a .bak file which I will cover in another blog post soon.
