@@ -3,7 +3,7 @@ layout: post
 title:  LINQ Contains
 date:   2019-07-24
 description: A quick look at how to restore a database from a mdf file. # Add post description (optional)
-img: cs.jpg # Add image post (optional)
+img: cs.png # Add image post (optional)
 tags: [C#,LINQ]
 
 datatable: true
