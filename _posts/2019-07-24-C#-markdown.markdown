@@ -4,11 +4,12 @@ title:  C# Regex
 date:   2019-07-26
 description: C# and regex # Add post description (optional)
 img: cs.png # Add image post (optional)
-tags: [C#,Regex
+tags: [C#,Regex]
 
 datatable: true
 author: Ian Fogelman # Add name author (optional)
 ---
+
 <br>
 <br>
 C# implementation of regex to check if parameter is a valid IP address.
