@@ -10,6 +10,19 @@ datatable: true
 author: Ian Fogelman # Add name author (optional)
 ---
 
+Oh hi didnt see you there... <br />
+Say since your hear, have you ever wondered "hey I wanna read this csv data into my c# program, but I don't want to bother downloading the file.". <br />
+If thats what your thinking, just take a look below friend, today I discuss how to do this exact task. <br />
+
+As always, you can find the finished program here: <br />
+https://rextester.com/WYCNA76267 
+
+<br />
+<br />
+<br />
+
+{% highlight c# %}
+
 <br>
 <br>
 C# implementation of regex to check if parameter is a valid IP address.
