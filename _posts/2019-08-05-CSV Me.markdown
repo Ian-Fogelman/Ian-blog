@@ -22,6 +22,12 @@ https://rextester.com/WYCNA76267
 <br />
 <br />
 
+Advantages to this approach can be reading each line from the file into a custom object model. From there you can apply LINQ statements to compare and manipulate the objects in a list or array. This strategy opens the doors wide open for implementations that can assist you in automatically processing files. More posts will to follow this one with examples.
+
+<br />
+<br />
+<br />
+
 
 
 {% highlight c# %}
