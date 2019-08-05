@@ -1,0 +1,11 @@
+---
+layout: post
+title:  C# Regex
+date:   2019-07-26
+description: c# and CSVs
+img: cs.png # Add image post (optional)
+tags: [C#,Data,CSVs,Linq]
+
+datatable: true
+author: Ian Fogelman # Add name author (optional)
+---
