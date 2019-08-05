@@ -24,6 +24,7 @@ https://rextester.com/WYCNA76267
 
 
 
+{% highlight c# %}
 
 using System;
 using System.Collections.Generic;
@@ -33,8 +34,7 @@ using System.Net;
 using System.IO;
 using System.Security.Authentication;
 
-namespace Rextester
-{
+
     public class Program
     {
         public static string GetCSV(string url)
@@ -70,4 +70,5 @@ namespace Rextester
             }
         }
     }
-}
+
+{% endhighlight %}  
