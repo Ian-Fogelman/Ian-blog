@@ -11,6 +11,7 @@ author: Ian Fogelman # Add name author (optional)
 ---
 
 Today we take a look at creating custom objects in Python.
+<br />
 https://anaconda.org/IanFogelman/working-with-python-classes-and-soup/notebook
 
 <br />
