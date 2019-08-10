@@ -16,7 +16,7 @@ https://anaconda.org/IanFogelman/working-with-python-classes-and-soup/notebook
 <br />
 <br />
 
-A high level discussion on why to use an OOP (object orientated programming) approach when working with data can be summarized as follows. In programming abstracting as much as possible should be your over all goal, programming for implementation is a recipe for disasster. When you program for any type of solution it can be tempting to only solve for the requirements of your project. What you should also consider is, is this code reusable? If I am programming a web application to send birthday card emails, can I just as easy use the application to send christmas card emails? Halloween card emails? 
+A high level discussion on why to use an OOP (object orientated programming) approach when working with data can be summarized as follows. In programming abstracting as much as possible should be your over all goal, programming for implementation is a recipe for dis·as·ter. When you program for any type of solution it can be tempting to only solve for the requirements of your project. What you should also consider is, is this code reusable? If I am programming a web application to send birthday card emails, can I just as easy use the application to send christmas card emails? Halloween card emails? 
 <br />
 <br />
 
