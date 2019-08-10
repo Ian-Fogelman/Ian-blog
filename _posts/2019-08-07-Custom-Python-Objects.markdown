@@ -13,11 +13,24 @@ author: Ian Fogelman # Add name author (optional)
 Today we take a look at creating custom objects in Python.
 <br />
 https://anaconda.org/IanFogelman/working-with-python-classes-and-soup/notebook
-
-<br />
 <br />
 <br />
 
+A high level discussion on why to use an OOP (object orientated programming) approach when working with data can be summarized as follows. In programming abstracting as much as possible should be your over all goal, programming for implementation is a recipe for disasster. When you program for any type of solution it can be tempting to only solve for the requirements of your project. What you should also consider is, is this code reusable? If I am programming a web application to send birthday card emails, can I just as easy use the application to send christmas card emails? Halloween card emails? 
+<br />
+<br />
+
+The point is you will often be under so type of time pressure to complete task X, what you have to remember is do not code for that particular implementation of the project. Take the extra time and critically analyze your program, extend it so that it make be extended. Abstract your logic into classes and objects that can be reused at a later date, you will be glad you did in the future.
+<br />
+<br />
+
+
+
+Now here is an example in Python of how to scrape data and use those scrapes to construct a consistently modeled object called TableRow.
+<br />
+<br />
+
+<hr>
 {% highlight Python %}
 
 from bs4 import BeautifulSoup
