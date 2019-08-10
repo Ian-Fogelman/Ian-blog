@@ -38,6 +38,10 @@ Now here is an example in Python of how to scrape data and use those scrapes to 
 
 <br />
 <br />
+In this demo we will scrape each td in each row of the table, create a temporary object with that data then append the temporary object to a list. Then we can iterate over that list of objects and access our data in a consistent and organized manner.
+
+<br />
+<br />
 
 <hr>
 {% highlight Python %}
