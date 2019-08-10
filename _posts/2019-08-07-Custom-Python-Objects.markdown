@@ -24,6 +24,10 @@ The point is you will often be under so type of time pressure to complete task X
 <br />
 <br />
 
+Here is an example of the table we will scrape:
+
+<br />
+<br />
 
 
 Now here is an example in Python of how to scrape data and use those scrapes to construct a consistently modeled object called TableRow.
