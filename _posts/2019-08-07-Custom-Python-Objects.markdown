@@ -20,7 +20,7 @@ A high level discussion on why to use an OOP (object orientated programming) app
 <br />
 <br />
 
-The point is you will often be under so type of time pressure to complete task X, what you have to remember is do not code for that particular implementation of the project. Take the extra time and critically analyze your program, extend it so that it make be extended. Abstract your logic into classes and objects that can be reused at a later date, you will be glad you did in the future.
+The point is you will often be under some type of time pressure to complete task X, what you have to remember is do not code for that particular implementation of the project. Take the extra time and critically analyze your program, extend it so that it make be extended. Abstract your logic into classes and objects that can be reused at a later date, you will be glad you did in the future.
 <br />
 <br />
 
