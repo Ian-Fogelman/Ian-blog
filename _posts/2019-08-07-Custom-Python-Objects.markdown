@@ -34,7 +34,7 @@ Now here is an example in Python of how to scrape data and use those scrapes to 
 <br />
 <br />
 
-![](/assets/img/TableScraperTable.PNG)
+![](/assets/img/TableScrapeTable.PNG)
 
 <br />
 <br />
