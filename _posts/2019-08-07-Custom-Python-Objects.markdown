@@ -34,6 +34,11 @@ Now here is an example in Python of how to scrape data and use those scrapes to 
 <br />
 <br />
 
+![](/assets/img/TableScraperTable.PNG)
+
+<br />
+<br />
+
 <hr>
 {% highlight Python %}
 
