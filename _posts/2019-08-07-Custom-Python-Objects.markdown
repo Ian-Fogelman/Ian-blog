@@ -29,12 +29,15 @@ Here is an example of the table we will scrape:
 <br />
 <br />
 
+![](/assets/img/TableScrapeTable.PNG)
+
+<br />
+<br />
 
 Now here is an example in Python of how to scrape data and use those scrapes to construct a consistently modeled object called TableRow.
 <br />
 <br />
 
-![](/assets/img/TableScrapeTable.PNG)
 
 <br />
 <br />
