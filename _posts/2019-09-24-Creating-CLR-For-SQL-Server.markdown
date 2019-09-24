@@ -60,7 +60,7 @@ Next add the following depencicies via the nuget package manager....
 
 Next pase this code into the project.
 
-{% highlight C# %}
+{% highlight cs %}
 using Microsoft.SqlServer.Server;
 using System.Data.SqlClient;
 using VaderSharp;
