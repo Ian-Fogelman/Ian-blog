@@ -51,10 +51,17 @@ ALTER DATABASE Debug SET TRUSTWORTHY ON;
 
 
 First Create the correct type of project...
-
+<br>
+<br>
 ![CLR Project Type](/assets/img/CLR1.png)
-
+<br>
+<br>
 Next add the following depencicies via the nuget package manager....
+<br>
+<br>
+Tools >> Nuget Package Manager >> Manage Nuget Packages for Solution...
+<br>
+<br>
 
 ![CLR Project Type](/assets/img/CLR2.png)
 
