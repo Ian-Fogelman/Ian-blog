@@ -50,7 +50,7 @@ First Create the correct type of project...
 
 Next add the following depencicies via the nuget package manager....
 
-![CLR Project Type](/assets/img/CLR2.PNG)
+![CLR Project Type](/assets/img/CLR2.png)
 
 Next pase this code into the project.
 
