@@ -109,6 +109,14 @@ SELECT dbo.ParseSentiment('A BRIGHT AND BEAUTIFUL DAY');
 <br>
 <br>
 
+![Function Results](/assets/img/CLR3.png)
+
+<br>
+<br>
+As you can see we can now return data using .Net and C# code just like we would a regular SQL Server function!
+<br>
+<br>
+
 Some common hangups when dealing with CLR's are the data type matchings between the CLR and Sql Server.
 <a href="https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/sql/linq/sql-clr-type-mapping" target="_blank"> Here is a conversion chart </a> to assist with that.
 
