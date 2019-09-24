@@ -25,8 +25,11 @@ ALTER DATABASE Debug SET TRUSTWORTHY ON;
 
 First Create the correct type of project...
 
+![CLR Project Type](/assets/img/CLR1.PNG)
+
 Next add the following depencicies via the nuget package manager....
 
+![CLR Project Type](/assets/img/CLR2.PNG)
 
 Next pase this code into the project.
 
@@ -53,6 +56,7 @@ Click build.
 
 Make a note of the build location on your file system, we will need this for the T-SQL code to create the assembly that references the .dll that was just created.
 
+Now that we have the dll built, we can call this function that will run the C# code from SQL server, to do this we must first create the assembly, then create a database object to reference that external assembly. This can be any type of database object ( stored procedure, table value function, scalar function) in this example I am using a scalar function.
 
 {% highlight SQL %}
 
