@@ -10,6 +10,17 @@ datatable: true
 author: Ian Fogelman # Add name author (optional)
 ---
 
+Before we begin the lesson let me touch on breifly what this post addresses.
+
+In today's lesson I am addressing how to run c# code in a SQL server enviorment.
+This is accomplished by something called Common Language Runtimes or CLR's.
+These CLR can come in flavors or Visual basic or C# code, today I will demo the C# flavor.
+Because it is C# it gives a wide range of options in terms of the .Net frame work and limitless abilities to bring in packages for an immense level of flexibility.
+
+Today I will be using a sentiment parser called Vader Sharp that will return a sentiment score of a text string.
+This will be turned into a SQL server function and will be able to have SQL server data passed as a parameter and a data type of float return which is a number between -1 and 1 representing the sentiment of the text.
+
+Lets Begin!
 
 Before we begin run the following code to prepare your SQL enviorment for CLR integration.
 
