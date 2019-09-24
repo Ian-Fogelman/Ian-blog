@@ -67,7 +67,7 @@ Tools >> Nuget Package Manager >> Manage Nuget Packages for Solution...
 
 Next pase this code into the project.
 
-{% highlight cs %}
+{% highlight csharp %}
 using Microsoft.SqlServer.Server;
 using System.Data.SqlClient;
 using VaderSharp;
