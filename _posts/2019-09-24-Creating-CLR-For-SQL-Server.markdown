@@ -56,7 +56,7 @@ First Create the correct type of project...
 ![CLR Project Type](/assets/img/CLR1.png)
 <br>
 <br>
-Next add the following depencicies via the nuget package manager....
+Next add the following dependencies via the nuget package manager....
 <br>
 <br>
 Tools >> Nuget Package Manager >> Manage Nuget Packages for Solution...
@@ -65,7 +65,7 @@ Tools >> Nuget Package Manager >> Manage Nuget Packages for Solution...
 
 ![CLR Project Type](/assets/img/CLR2.png)
 
-Next pase this code into the project.
+Next paste this code into the project.
 
 {% highlight csharp %}
 using Microsoft.SqlServer.Server;
@@ -86,7 +86,7 @@ public class Sentiment
 
 {% endhighlight %}
 
-Click build.
+On the visual studio ribbon click build.
 
 Make a note of the build location on your file system, we will need this for the T-SQL code to create the assembly that references the .dll that was just created.
 
