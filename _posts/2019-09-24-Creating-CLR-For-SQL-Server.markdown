@@ -16,16 +16,22 @@ Before we begin the lesson let me touch on breifly what this post addresses.
 
 In today's lesson I am addressing how to run c# code in a SQL server enviorment.
 <br>
+<br>
 This is accomplished by something called Common Language Runtimes or CLR's.
+<br>
 <br>
 These CLR can come in flavors or Visual basic or C# code, today I will demo the C# flavor.
 <br>
+<br>
 Because it is C# it gives a wide range of options in terms of the .Net frame work and limitless abilities to bring in packages for an immense level of flexibility.
+<br>
 <br>
 
 Today I will be using a sentiment parser called Vader Sharp that will return a sentiment score of a text string.
 <br>
+<br>
 This will be turned into a SQL server function and will be able to have SQL server data passed as a parameter and a data type of float return which is a number between -1 and 1 representing the sentiment of the text.
+<br>
 <br>
 Lets Begin!
 <br>
@@ -92,5 +98,11 @@ GO
 SELECT dbo.ParseSentiment('A BRIGHT AND BEAUTIFUL DAY'); 
 
 {% endhighlight %}
+
+<br>
+<br>
+
+Some common hangups when dealing with CLR's are the data type matchings between the CLR and Sql Server.
+<a href="https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/sql/linq/sql-clr-type-mapping" target="_blank"> Here is a conversion chart </a> to assist with that.
 
 
