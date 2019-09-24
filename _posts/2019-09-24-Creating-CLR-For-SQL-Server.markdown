@@ -13,11 +13,13 @@ author: Ian Fogelman # Add name author (optional)
 
 Before we begin run the following code to prepare your SQL enviorment for CLR integration.
 
+{% highlight SQL %}
 
 EXEC sp_configure 'clr enabled', 1;  RECONFIGURE WITH OVERRIDE;
 
 ALTER DATABASE Debug SET TRUSTWORTHY ON;
 
+{% endhighlight %}
 
 
 
@@ -28,7 +30,7 @@ Next add the following depencicies via the nuget package manager....
 
 Next pase this code into the project.
 
-
+{% highlight C# %}
 using Microsoft.SqlServer.Server;
 using System.Data.SqlClient;
 using VaderSharp;
@@ -45,11 +47,14 @@ public class Sentiment
     }
 }
 
+{% endhighlight %}
+
 Click build.
 
 Make a note of the build location on your file system, we will need this for the T-SQL code to create the assembly that references the .dll that was just created.
 
 
+{% highlight SQL %}
 
 CREATE ASSEMBLY SentimentParser from 'C:\Users\XXX\source\repos\CLRFunc\CLRFunc\bin\Debug\CLRFunc.dll' WITH PERMISSION_SET = SAFE  
 GO 
@@ -59,7 +64,8 @@ RETURNS FLOAT
 AS EXTERNAL NAME SentimentParser.Sentiment.ParseSentiment;   
 GO  
 
-SELECT dbo.ParseSentiment('A BRIGHT AND BEAUTIFUL DAY');  
+SELECT dbo.ParseSentiment('A BRIGHT AND BEAUTIFUL DAY'); 
 
+{% endhighlight %}
 
 
