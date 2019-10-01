@@ -3,7 +3,7 @@ layout: post
 title:  Web scraping with Python and Beautifulsoup
 date:   2019-09-30
 description: How to scrape table data with Python
-img: sq.jpg # Add image post (optional)
+img: py.png # Add image post (optional)
 tags: [Python, Webscraping, Data]
 
 datatable: true
