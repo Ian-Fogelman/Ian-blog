@@ -99,10 +99,10 @@ GO
 
 CREATE FUNCTION ParseSentiment(@input NVARCHAR(MAX)) 
 RETURNS FLOAT   
-AS EXTERNAL NAME SentimentParser.Sentiment.ParseSentiment;   
+AS EXTERNAL NAME SentimentParser.Sentiment.ParseSentiment; 
+--           ASSEMBLY.CLASS___.METHOD
 GO  
 
-SELECT dbo.ParseSentiment('A BRIGHT AND BEAUTIFUL DAY'); 
 
 {% endhighlight %}
 
