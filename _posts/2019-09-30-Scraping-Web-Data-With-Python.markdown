@@ -11,6 +11,8 @@ author: Ian Fogelman # Add name author (optional)
 ---
 
 Today a brief and example of scraping data from a website.
+<br>
+<br>
 There are a variety of tools to do this, I will be using Beautiful Soup a Python module to demo the concept.
 <br>
 <br>
