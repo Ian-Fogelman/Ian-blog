@@ -18,5 +18,5 @@ There are a variety of tools to do this, I will be using Beautiful Soup a Python
 <br>
 
 
-<iframe height="400px" width="100%" src="https://repl.it/@IanFogelman/NFL-Odds-Scraper?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+<iframe height="800px" width="100%" src="https://repl.it/@IanFogelman/NFL-Odds-Scraper?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 
