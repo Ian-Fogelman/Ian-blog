@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  SQL Many Rows To One XML And Stuff
-date:   2019-09-30
+date:   2019-10-05
 description: How to combine rows in SQL example
 img: py.png # Add image post (optional)
 tags: [SQL,XML,STUFF]
