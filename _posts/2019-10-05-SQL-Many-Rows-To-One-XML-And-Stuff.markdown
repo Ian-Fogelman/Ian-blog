@@ -13,7 +13,9 @@ author: Ian Fogelman # Add name author (optional)
 This question arose on the SO forum some months ago.
 <br>
 <br>
+![CLR Project Type](/assets/img/Stuff1.png)
 The poster had a number of rows per UserID and wanted a result set of one row per userId with all the roles that would be associated to them.
+![CLR Project Type](/assets/img/Stuff2.png)
 <br>
 <br>
 
