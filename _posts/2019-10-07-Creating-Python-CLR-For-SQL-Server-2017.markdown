@@ -12,7 +12,7 @@ author: Ian Fogelman # Add name author (optional)
 
 <br>
 <br>
-In a recent blog post I covered how to get started with C# common language runtimes. I mentioned that the flavors available are C# and Visual basic, this technology began shipping in SQL 2005. 
+In a recent blog post I covered how to get started with C# common language runtimes. I mentioned that the flavors available are C# and Visual basic, this technology began shipping with SQL Server 2005. 
 <br>
 <br>
 However a more recent development in the SQL server world began shipping with SQL Server 2017 and this is availability for Python and R scripts to run natively in your SQL instance.
