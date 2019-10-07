@@ -89,5 +89,5 @@ pip.exe install text-tools
 And thats it congratulations, you are all setup to run Python on your SQL instance!
 <br>
 <br>
-It is possible to output data straight to the query grid like you would a normal procedure in SQL Server, I plan to cover more about this in the future. This opens up the flood gates in terms of data warehousing, model performance and so much more interesting functionality that is available in Python.
+It is possible to output data straight to the query grid like you would a normal procedure in SQL Server. I plan to cover more about this in the future. This opens up the flood gates in terms of data warehousing, model performance and so much more interesting functionality that is available in Python.
 
