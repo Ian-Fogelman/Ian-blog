@@ -59,6 +59,13 @@ Now lets take a look at what a Python script looks like inside of SQL server.
 Here is an example to check the location of the install for specifically the SQL Server 2017 Python install.
 <br>
 <br>
+
+A quick note here that if you run anaconda or Python on the client machine already, the dependencies that you have will not be carried over to this new SQL Server 2017 Python. It is completly different and you will need to manage the libraries seperately!
+<br>
+<br>
+This code will give the install location so a simple way to install a new module so that you may use it in SQL server is :
+<br>
+<br>
 {% highlight SQL %}
 EXEC sp_execute_external_script
 
@@ -66,12 +73,10 @@ EXEC sp_execute_external_script
 
   @script=N'import sys; print("\n".join(sys.path))'
 {% endhighlight %}
+
 <br>
 <br>
-A quick note here that if you run anaconda or Python on the client machine already, the dependencies that you have will not be carried over to this new SQL Server 2017 Python. It is completly different and you will need to manage the libraries seperately!
-<br>
-<br>
-This code will give the install location so a simple way to install a new module so that you may use it in SQL server is :
+Now you have the install location you can open a CMD prompt and cd the directory scripts and then issue a pip.exe command to add a module. Here is a example:
 <br>
 <br>
 {% highlight CMD %}
@@ -80,3 +85,9 @@ pip.exe install text-tools
 {% endhighlight %}
 <br>
 <br>
+
+And thats it congratulations, you are all setup to run Python on your SQL instance!
+<br>
+<br>
+It is possible to output data straight to the query grid like you would a normal procedure in SQL Server, I plan to cover more about this in the future. This opens up the flood gates in terms of data warehousing, model performance and so much more interesting functionality that is available in Python.
+
