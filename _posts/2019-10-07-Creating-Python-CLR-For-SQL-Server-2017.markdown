@@ -76,7 +76,7 @@ EXEC sp_execute_external_script
 
 <br>
 <br>
-Now you have the install location you can open a CMD prompt and cd the directory scripts and then issue a pip.exe command to add a module. Here is a example:
+Now you have the install location you can open a CMD prompt and cd the directory and then issue a pip.exe command to add a module. Here is a example:
 <br>
 <br>
 {% highlight CMD %}
