@@ -53,17 +53,10 @@ Once that is complete, a restart for the instance will need to be performed.
 <br>
 <br>
 
-Now lets take a look at what a Python script looks like inside of SQL server.
-<br>
-<br>
 Here is an example to check the location of the install for specifically the SQL Server 2017 Python install.
 <br>
 <br>
-
 A quick note here that if you run anaconda or Python on the client machine already, the dependencies that you have will not be carried over to this new SQL Server 2017 Python. It is completly different and you will need to manage the libraries seperately!
-<br>
-<br>
-This code will give the install location so a simple way to install a new module so that you may use it in SQL server is :
 <br>
 <br>
 {% highlight SQL %}
@@ -76,7 +69,7 @@ EXEC sp_execute_external_script
 
 <br>
 <br>
-Now you have the install location you can open a CMD prompt and cd the directory and then issue a pip.exe command to add a module. Here is a example:
+Now you have the install location you can open a CMD prompt and cd the directory and then issue a pip.exe command to install a new module. Here is a example:
 <br>
 <br>
 {% highlight CMD %}
