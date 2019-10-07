@@ -31,7 +31,7 @@ The main thing to be concerned with here under feature selection is to click the
 <br>
 <br>
 
-![Before](/assets/img/Stuff1.PNG)
+![Before](/assets/img/PythonS001.PNG)
 
 <br>
 <br>
@@ -49,7 +49,7 @@ RECONFIGURE WITH OVERRIDE;
 Once that is complete, a restart for the instance will need to be performed.
 <br>
 <br>
-![Before](/assets/img/Stuff1.PNG)
+![Before](/assets/img/PythonS002.PNG)
 <br>
 <br>
 
