@@ -24,7 +24,7 @@ This is extremly interesting because now you can develop stored procedures that 
 To get things started I will just show a few high level steps of how to get your SQL instance primed for this.
 <br>
 <br>
-Firstly your going to need a SQL server 2017 instance, I learned that SQL express editions do not carry the functionaility for Python and R scripting. So you can download a 180 eval edition here.
+Firstly your going to need a SQL server 2017 instance, I learned that SQL express editions do not carry the functionaility for Python and R scripting. So you can download a 180 eval edition <a href="https://www.microsoft.com/en-us/evalcenter/evaluate-sql-server-2017-rtm" target="_blank" >here</a>.
 <br>
 <br>
 The main thing to be concerned with here under feature selection is to click the check for Python under database engine services.
