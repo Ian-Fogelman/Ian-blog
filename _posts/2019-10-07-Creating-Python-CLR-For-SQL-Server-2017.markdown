@@ -3,7 +3,7 @@ layout: post
 title:  Using Python scripts natively in SQL Server 2017
 date:   2019-10-07
 description: Overview of running Python scripts on a SQL Server 2017 instance!
-img: py.png # Add image post (optional)
+img: sq.jpg # Add image post (optional)
 tags: [Python,SQL,SSMS,Sql Server]
 
 datatable: true
