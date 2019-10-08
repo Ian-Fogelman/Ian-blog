@@ -85,7 +85,7 @@ And thats it congratulations, you are all setup to run Python on your SQL instan
 It is possible to output data straight to the query grid like you would a normal procedure in SQL Server. This opens up the flood gates in terms of data warehousing, model performance and so much more interesting functionality that is available in Python.
 <br>
 <br>
-Passing data to a Python CLR Proc:
+Passing data to a Python CLR Proc, here I wrote a function to count the frequency of characters in the text passed to the proc. The results are then translated to a pandas dataframe and returned in the format specified of WITH RESULT SETS:
 <br>
 <br>
 {% highlight SQL %}
