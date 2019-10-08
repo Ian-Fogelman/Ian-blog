@@ -9,10 +9,11 @@ tags: [Python,SQL,SSMS,Sql Server]
 datatable: true
 author: Ian Fogelman # Add name author (optional)
 ---
-<meta property="og:title" content="Super Fun SQL">
+<meta property="og:title" content="Using Python scripts natively in SQL Server 2017">
 <meta property="og:description" content="A blog by Ian Fogelman.">
 <meta property="og:image" content="https://repository-images.githubusercontent.com/190807493/a3610e80-bed1-11e9-87ac-2a4f0aa3b2ee">
 <meta property="og:url" content="https://repository-images.githubusercontent.com/190807493/a3610e80-bed1-11e9-87ac-2a4f0aa3b2ee">
+
 <br>
 <br>
 In a recent blog post I covered how to get started with C# common language runtimes. I mentioned that the flavors available are C# and Visual basic, this technology began shipping with SQL Server 2005. 
