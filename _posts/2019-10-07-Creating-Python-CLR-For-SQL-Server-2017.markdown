@@ -89,7 +89,7 @@ Passing data to a Python CLR Proc:
 <br>
 <br>
 {% highlight SQL %}
-CREATE PROC CountChars (
+CREATE PROCEDURE CountChars (
       @param1 VARCHAR(MAX)
     )
 AS
@@ -105,10 +105,13 @@ OutputDataSet = df
 , @input_data_1 = N'   ;'
     , @params = N' @text VARCHAR(MAX)'
     , @text = @param1    
-WITH RESULT SETS(([Col1] CHAR(20) NOT NULL,[Col2] CHAR(20) NOT NULL));
+WITH RESULT SETS(([Letter] CHAR(20) NOT NULL,[Count] CHAR(20) NOT NULL));
 {% endhighlight %}
 <br>
 <br>
 {% highlight SQL %}
-exec CountChars 'a' 
+exec CountChars 'super fun sql' 
 {% endhighlight %}
+<br>
+<br>
+![Result](/assets/img/PythonS003.PNG)
