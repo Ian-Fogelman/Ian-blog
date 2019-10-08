@@ -83,7 +83,11 @@ And thats it congratulations, you are all setup to run Python on your SQL instan
 <br>
 <br>
 It is possible to output data straight to the query grid like you would a normal procedure in SQL Server. I plan to cover more about this in the future. This opens up the flood gates in terms of data warehousing, model performance and so much more interesting functionality that is available in Python.
-
+<br>
+<br>
+Passing data to a Python CLR Proc:
+<br>
+<br>
 {% highlight SQL %}
 CREATE PROC CountChars (
       @param1 VARCHAR(MAX)
