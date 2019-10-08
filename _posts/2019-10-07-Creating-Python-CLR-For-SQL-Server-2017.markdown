@@ -9,7 +9,10 @@ tags: [Python,SQL,SSMS,Sql Server]
 datatable: true
 author: Ian Fogelman # Add name author (optional)
 ---
-
+<meta property="og:title" content="European Travel Destinations">
+<meta property="og:description" content="Offering tour packages for individuals or groups.">
+<meta property="og:image" content="http://euro-travel-example.com/thumbnail.jpg">
+<meta property="og:url" content="http://euro-travel-example.com/index.htm">
 <br>
 <br>
 In a recent blog post I covered how to get started with C# common language runtimes. I mentioned that the flavors available are C# and Visual basic, this technology began shipping with SQL Server 2005. 
