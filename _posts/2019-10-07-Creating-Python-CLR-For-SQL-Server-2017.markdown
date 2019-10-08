@@ -115,4 +115,3 @@ exec CountChars 'super fun sql'
 <br>
 <br>
 ![XImage](/assets/img/PythonS003.PNG)
-![Restart](/assets/img/PythonS003.PNG)
