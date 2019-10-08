@@ -9,8 +9,8 @@ tags: [Python,SQL,SSMS,Sql Server]
 datatable: true
 author: Ian Fogelman # Add name author (optional)
 ---
-<meta property="og:title" content="European Travel Destinations">
-<meta property="og:description" content="Offering tour packages for individuals or groups.">
+<meta property="og:title" content="Super Fun SQL">
+<meta property="og:description" content="A blog by Ian Fogelman.">
 <meta property="og:image" content="https://repository-images.githubusercontent.com/190807493/a3610e80-bed1-11e9-87ac-2a4f0aa3b2ee">
 <meta property="og:url" content="https://repository-images.githubusercontent.com/190807493/a3610e80-bed1-11e9-87ac-2a4f0aa3b2ee">
 <br>
