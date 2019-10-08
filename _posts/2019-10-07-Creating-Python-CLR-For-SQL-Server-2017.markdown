@@ -84,3 +84,27 @@ And thats it congratulations, you are all setup to run Python on your SQL instan
 <br>
 It is possible to output data straight to the query grid like you would a normal procedure in SQL Server. I plan to cover more about this in the future. This opens up the flood gates in terms of data warehousing, model performance and so much more interesting functionality that is available in Python.
 
+{% highlight SQL %}
+CREATE PROC CountChars (
+      @param1 VARCHAR(MAX)
+    )
+AS
+EXECUTE sp_execute_external_script @language = N'Python'
+    , @script = N'
+import pandas as pd
+freq_count = [(c, text.count(c)) for c in text if c.isalpha()]
+OutputDataSet = sorted(list(set(freq_count)), key=lambda x: (-x[1], x[0]))
+df = pd.DataFrame(OutputDataSet)
+
+OutputDataSet = df
+'
+, @input_data_1 = N'   ;'
+    , @params = N' @text VARCHAR(MAX)'
+    , @text = @param1    
+WITH RESULT SETS(([Col1] CHAR(20) NOT NULL,[Col2] CHAR(20) NOT NULL));
+{% endhighlight %}
+<br>
+<br>
+{% highlight SQL %}
+exec CountChars 'a' 
+{% endhighlight %}
