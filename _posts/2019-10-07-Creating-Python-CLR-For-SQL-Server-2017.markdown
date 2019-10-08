@@ -114,4 +114,5 @@ exec CountChars 'super fun sql'
 {% endhighlight %}
 <br>
 <br>
-![Result](/assets/img/PythonS003.PNG)
+![XImage](/assets/img/PythonS003.PNG)
+![Restart](/assets/img/PythonS003.PNG)
