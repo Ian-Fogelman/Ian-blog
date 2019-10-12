@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Geting started with SSAS Tabular
+title:  An introduction to SSAS Tabular models
 date:   2019-10-12
 description: How to get started creating a SSAS tabular model + deployment
 img: sq.jpg # Add image post (optional)
