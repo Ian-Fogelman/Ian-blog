@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Using Python scripts natively in SQL Server 2017
+title:  Geting started with SSAS Tabular
 date:   2019-10-12
 description: How to get started creating a SSAS tabular model + deployment
 img: sq.jpg # Add image post (optional)
