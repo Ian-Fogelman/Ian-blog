@@ -20,7 +20,13 @@ author: Ian Fogelman # Add name author (optional)
 Today I will cover how to get a SSAS tabular up and running. SSAS is an OLAP mining tool that can help an enterprise track and manage KPI data and also assist in the ware housing process. 
 <br>
 <br>
+The data I will be working on today is from adventure works 2017, the .bak file can be found here https://github.com/Microsoft/sql-server-samples/releases/download/adventureworks/AdventureWorks2017.bak
 
+<br>
+<br>
+Restore this bak file to a your server instance.
+<br>
+<br>
 First thing is first, make sure you have SQL server data tools installed. I was using SQL server 2017, so I needed to use a seperate standalone installer, but you can will know you have installed correctly if when you open visual studio 2017 and click new project you see the business intelligence option.
 
 <br>
