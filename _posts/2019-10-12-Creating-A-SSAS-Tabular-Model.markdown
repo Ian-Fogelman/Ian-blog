@@ -27,7 +27,7 @@ The data I will be working on today is from adventure works 2017, the .bak file 
 Restore this bak file to a your server instance.
 <br>
 <br>
-First thing is first, make sure you have SQL server data tools installed. I was using SQL server 2017, so I needed to use a seperate standalone installer, but you can will know you have installed correctly if when you open visual studio 2017 and click new project you see the business intelligence option.
+First thing is first, make sure you have SQL server data tools installed. I was using SQL server 2017, so I needed to use a seperate standalone installer, but you can will know you have installed correctly if when you open visual studio 2017 and click new project you see the business intelligence and analysis service option as project types.
 
 <br>
 <br>
