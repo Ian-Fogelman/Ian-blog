@@ -84,7 +84,21 @@ Notice that if you browse the diagram view all the relationships are mapped out
 ![Features](/assets/img/SSASI009.png)
 <br>
 <br>
-Finally lets connect to the SSAS model and run a simple query
+Finally lets connect to the SSAS model and run a simple query, you have the options of MDX and DAX to query your model.
+<br>
+I will be using a short DAX query for my example.
+
+<br>
+<br>
+
+{% highlight SQL %}
+VALUATE
+SalesOrderDetail
+{% endhighlight %}
+
+<br>
+<br>
+
 ![Features](/assets/img/SSASI010.png)
 
 
