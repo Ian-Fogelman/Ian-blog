@@ -53,34 +53,44 @@ Select a the Workspace Server as your instance.
 Once the project loads right click on Data Sources -> Import from Data Source, choose SQL Server
 <br>
 <br>
+![Features](/assets/img/SSASI004.png)
+<br>
+<br>
 This will prompt the Table Import Wizard, provide a SQL Server Authed login to this diaologue and select the database.
+<br>
+<br>
+![Features](/assets/img/SSASI005.png)
 <br>
 <br>
 Under impersonation information, select service account
 <br>
 <br>
-Now choose the tables that will be imported
-
+![Features](/assets/img/SSASI006.png)
 <br>
 <br>
-
+Now choose the tables that will be imported, for my model I choose the following :
+<br>
+<br>
+![Features](/assets/img/SSASI007.png)
+<br>
+<br>
 The import will run and bring all the table data into the SSAS tabular model
 ![Features](/assets/img/SSASI008.png)
-
 <br>
 <br>
-
 Notice that if you browse the diagram view all the relationships are mapped out
 <br>
 <br>
-
+![Features](/assets/img/SSASI009.png)
+<br>
+<br>
 Finally lets connect to the SSAS model and run a simple query
 ![Features](/assets/img/SSASI010.png)
 
-![Features](/assets/img/SSASI004.png)
-![Features](/assets/img/SSASI005.png)
-![Features](/assets/img/SSASI006.png)
-![Features](/assets/img/SSASI007.png)
 
-![Features](/assets/img/SSASI009.png)
+
+
+
+
+
 
