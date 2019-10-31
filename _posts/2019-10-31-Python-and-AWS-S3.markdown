@@ -3,7 +3,7 @@ layout: post
 title:  Python and AWS S3
 date:   2019-10-31
 description: Storing and retreiving files in S3 with Python
-img: aws.jpg # Add image post (optional)
+img: aws.png # Add image post (optional)
 tags: [AWS,Python,Pandas]
 
 datatable: true
