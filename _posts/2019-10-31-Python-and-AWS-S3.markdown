@@ -99,5 +99,3 @@ csv_string = body.read().decode('utf-8')
 
 df = pd.read_csv(StringIO(csv_string))
 {% endhighlight %}
-
-#![Features](/assets/img/SSASI010.png)
