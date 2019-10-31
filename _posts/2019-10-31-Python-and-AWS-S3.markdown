@@ -9,7 +9,7 @@ tags: [AWS,Python,Pandas]
 datatable: true
 author: Ian Fogelman # Add name author (optional)
 ---
-<meta property="og:title" content="How to get started creating a SSAS tabular model + deployment">
+<meta property="og:title" content="Storing and retreiving files in S3 with Python">
 <meta property="og:description" content="A blog by Ian Fogelman.">
 <meta property="og:image" content="https://repository-images.githubusercontent.com/190807493/a3610e80-bed1-11e9-87ac-2a4f0aa3b2ee">
 <meta property="og:url" content="https://repository-images.githubusercontent.com/190807493/a3610e80-bed1-11e9-87ac-2a4f0aa3b2ee">
@@ -17,9 +17,11 @@ author: Ian Fogelman # Add name author (optional)
 <br>
 <br>
 
-Once you have SSDT installed, click new project and under analysis services click Tabular for the project type, give your project a descriptive name.
+Amazon Web Services or (AWS) offers many fantastic services, maybe none so utilitarian as amazon S3. S3 stands for simple storage service, you can store just about anything in S3. Today I will give a qucik example of using the python package boto to do this.
 <br>
 <br>
+
+
 
 <br>
 <br>
@@ -27,9 +29,8 @@ Make a note of the instance that you have your datawarehouse on we will need tha
 <br>
 <br>
 
-{% highlight SQL %}
-VALUATE
-SalesOrderDetail
+{% highlight Python %}
+print("XxX")
 {% endhighlight %}
 
 <br>
