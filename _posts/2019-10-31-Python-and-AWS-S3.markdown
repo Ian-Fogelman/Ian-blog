@@ -69,8 +69,6 @@ def upload_to_aws(local_file, bucket, s3_file):
     except NoCredentialsError:
         print("Credentials not available")
         return False
-
-
 uploaded = upload_to_aws('filename.txt', 'bucketname', 'filename.txt')
 {% endhighlight %}
 
@@ -78,4 +76,4 @@ uploaded = upload_to_aws('filename.txt', 'bucketname', 'filename.txt')
 <br>
 
 
---![Features](/assets/img/SSASI010.png)
+#![Features](/assets/img/SSASI010.png)
