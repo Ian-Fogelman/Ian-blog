@@ -75,5 +75,29 @@ uploaded = upload_to_aws('filename.txt', 'bucketname', 'filename.txt')
 <br>
 <br>
 
+{% highlight Python %}
+
+import os
+import boto3
+import pandas as pd
+import sys
+
+if sys.version_info[0] < 3: 
+    from StringIO import StringIO # Python 2.x
+else:
+    from io import StringIO # Python 3.x
+
+client = boto3.client('s3', aws_access_key_id=ACCESS_KEY,
+        aws_secret_access_key=SECRET_KEY)
+
+bucket_name = 'bucket'
+
+object_key = 'XXX.csv'
+csv_obj = client.get_object(Bucket=bucket_name, Key=object_key)
+body = csv_obj['Body']
+csv_string = body.read().decode('utf-8')
+
+df = pd.read_csv(StringIO(csv_string))
+{% endhighlight %}
 
 #![Features](/assets/img/SSASI010.png)
