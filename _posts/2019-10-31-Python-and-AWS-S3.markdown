@@ -40,7 +40,7 @@ Next Click create bucket.
 ![S32](/assets/img/S32.PNG)
 <br>
 <br>
-Make a note of the bucket name, you click next and you may leave all default options chosen for the purposes of this demo.
+Make a note of the bucket name, you may click next and you may leave all default options chosen for the purposes of this demo.
 <br>
 <br>
 ![S33](/assets/img/S33.PNG)
