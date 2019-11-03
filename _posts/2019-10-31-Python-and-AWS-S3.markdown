@@ -25,7 +25,24 @@ I will assume that you already have an AWS account, to work with AWS programatic
 <br>
 
 Now lets create a bucket in S3...
-
+<br>
+<br>
+Once loged into your AWS console, search for S3.
+<br>
+<br>
+![Features](/assets/img/S31.png)
+<br>
+<br>
+Next Click create bucket.
+<br>
+<br>
+![Features](/assets/img/S32.png)
+<br>
+<br>
+Make a note of the bucket name, you click next and you may leave all default options chosen for the purposes of this demo.
+<br>
+<br>
+![Features](/assets/img/S33.png)
 <br>
 <br>
 Now that you have a client and secret, you can optionally store the keys in an envormental variable. This will allow you to reference the keys on your machine without hard coding the values.
