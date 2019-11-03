@@ -92,7 +92,9 @@ uploaded = upload_to_aws('filename.txt', 'bucketname', 'filename.txt')
 
 <br>
 <br>
-
+Here is an additional example of reading a csv file stored into S3 into a pandas dataframe object.
+<br>
+<br>
 {% highlight Python %}
 
 import os
