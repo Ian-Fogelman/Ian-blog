@@ -20,7 +20,7 @@ author: Ian Fogelman # Add name author (optional)
 Amazon Web Services or (AWS) offers many fantastic services, maybe none so utilitarian as amazon S3. S3 stands for simple storage service, you can store just about anything in S3. Today I will give a qucik example of using the python package boto to do this.
 <br>
 <br>
-I will assume that you already have an AWS account, to work with AWS programatically you will interact with the API and to do that we need to be authorized via client and secret, a good guide how to get your client id and secret is covered <a href="https://objectivefs.com/howto/how-to-get-amazon-s3-keys">here</a>.
+I will assume that you already have an AWS account, to work with AWS programatically you will interact with the API and to do that we need to be authorized via client and secret, a good guide how to get your client id and secret is covered <a href="https://objectivefs.com/howto/how-to-get-amazon-s3-keys" target="_blank">here</a>.
 
 <br>
 <br>
