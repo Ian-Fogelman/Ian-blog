@@ -18,3 +18,4 @@ author: Ian Fogelman # Add name author (optional)
 <br>
 
 https://www.sqlshack.com/effectively-extract-data-from-olap-cube-by-relying-upon-tsql/
+https://sqlhints.com/tag/dynamic-pivot-column-names/
