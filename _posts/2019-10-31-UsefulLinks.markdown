@@ -19,3 +19,34 @@ author: Ian Fogelman # Add name author (optional)
 
 https://www.sqlshack.com/effectively-extract-data-from-olap-cube-by-relying-upon-tsql/ <br />
 https://sqlhints.com/tag/dynamic-pivot-column-names/
+
+
+<div class="container-fluid">
+    <table class="datatable table table-hover table-bordered">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>URL</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tfoot>
+      </tfoot>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>https://www.sqlshack.com/effectively-extract-data-from-olap-cube-by-relying-upon-tsql/</td>
+          <td>Cube details</td>
+        </tr>
+		<tr>
+          <td>2</td>
+          <td>https://sqlhints.com/tag/dynamic-pivot-column-names/</td>
+          <td>Dynamic Pivot Example TSQL</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Bob</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
