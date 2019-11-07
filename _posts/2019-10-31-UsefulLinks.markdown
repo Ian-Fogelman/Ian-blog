@@ -43,10 +43,6 @@ https://sqlhints.com/tag/dynamic-pivot-column-names/
           <td>https://sqlhints.com/tag/dynamic-pivot-column-names/</td>
           <td>Dynamic Pivot Example TSQL</td>
         </tr>
-        <tr>
-          <td>2</td>
-          <td>Bob</td>
-        </tr>
       </tbody>
     </table>
   </div>
