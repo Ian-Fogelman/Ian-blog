@@ -40,3 +40,6 @@ Once defined we can use the engine to feed dataframes into our SQL instances suc
 {% highlight Python %}
 df.to_sql("TABLE", engine, if_exists='append',index = False, chunksize = 200)
 {% endhighlight %}
+
+Here is an example of using SqlAlchemy to retieve stock prices and stock in a SQL server database.
+<a href="https://anaconda.org/IanFogelman/stock-analysis/notebook" target="_blank">Example</a>
