@@ -3,7 +3,7 @@ layout: post
 title:  Python and SQLAlchemy
 date:   2019-11-18
 description: SQLalchemy enginge
-img: SQL.png # Add image post (optional)
+img: sq.png # Add image post (optional)
 tags: [Python,SQLAlchemy]
 
 datatable: true
