@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  My Links
+title:  My Resources
 date:   2019-01-01
 description: Links For All
 img: sq.png # Add image post (optional)
@@ -23,7 +23,7 @@ author: Ian Fogelman # Add name author (optional)
       <thead>
         <tr>
           <th>ID</th>
-          <th>URL</th>
+          <th>Resource</th>
           <th>Description</th>
         </tr>
       </thead>
