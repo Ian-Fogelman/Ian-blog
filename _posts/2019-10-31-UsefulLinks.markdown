@@ -35,10 +35,15 @@ author: Ian Fogelman # Add name author (optional)
           <td>https://www.sqlshack.com/effectively-extract-data-from-olap-cube-by-relying-upon-tsql/</td>
           <td>Cube details</td>
         </tr>
-		<tr>
+	<tr>
           <td>2</td>
           <td>https://sqlhints.com/tag/dynamic-pivot-column-names/</td>
           <td>Dynamic Pivot Example TSQL</td>
+        </tr>
+      	<tr>
+          <td>3</td>
+          <td>anaconda upload "Stock Analysis.ipynb"</td>
+          <td>How to upload a notebook to Cloud Anaconda</td>
         </tr>
       </tbody>
     </table>
