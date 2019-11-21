@@ -9,7 +9,7 @@
         <a href="{{ root_url }}{{ post.url | prepend: site.baseurl }}" class="recent-item" style="background: url({{"/assets/img/" | prepend: site.baseurl | append : post.img}}) center no-repeat; background-size: cover;"><span style="color:#fff;width:100%;text-align:center;border-radius: 10px;background: #239b56;">{{ post.title }}</span></a>
       {% endif %}
     
-      {% if post.img == "sq.jpg" %}
+      {% if post.img == "sq.jpg" or post.img == "sq.png" %}
         <a href="{{ root_url }}{{ post.url | prepend: site.baseurl }}" class="recent-item" style="background: url({{"/assets/img/" | prepend: site.baseurl | append : post.img}}) center no-repeat; background-size: cover;"><span style="color:#fff;width:100%;text-align:center;border-radius: 10px;background: #c0392b;">{{ post.title }}</span></a>
       {% endif %}
     
