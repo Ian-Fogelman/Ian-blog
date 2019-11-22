@@ -53,19 +53,19 @@ In the example below I put the restful API that a subquery would come from. Noti
         rating
         url
         phone
-    		distance
-    		is_closed
-    
-    		location {
-    		  address1
-    		  address2
-    		  address3
-    		  city
-    		  state
-    		  postal_code
-    		  country
-    		  formatted_address
-    		}
+        distance
+        is_closed
+
+        location {
+          address1
+          address2
+          address3
+          city
+          state
+          postal_code
+          country
+          formatted_address
+        }
     
 #https://api.yelp.com/v3/transactions/{transaction_type}/search
     transactions
