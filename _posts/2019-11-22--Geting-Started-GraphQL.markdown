@@ -25,6 +25,10 @@ The best way to think of what GraphQL is, just think of it as short hand express
 <br>
 <br>
 This is achieved by applying an abstract layer, aka GraphQL server layer between your API endpoints and clients.
+
+<br>
+<br>
+![RestGraphQL](/assets/img/RestGraphQL.PNG)
 <br>
 <br>
 Now not all API's inheritly support graph QL, but there is an extensive list of example api's here : https://github.com/APIs-guru/graphql-apis .
