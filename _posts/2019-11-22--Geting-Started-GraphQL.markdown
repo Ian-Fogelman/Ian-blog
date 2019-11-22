@@ -31,12 +31,12 @@ This is achieved by applying an abstract layer, aka GraphQL server layer between
 ![RestGraphQL](/assets/img/RestGraphQL.PNG)
 <br>
 <br>
-Now not all API's inheritly support graph QL, but there is an extensive list of example api's here : <a href="https://github.com/APIs-guru/graphql-apis">https://github.com/APIs-guru/graphql-apis</a> .
+Now not all API's inheritly support graph QL, but there is an extensive list of example api's here : <a href="https://github.com/APIs-guru/graphql-apis" target="_blank">https://github.com/APIs-guru/graphql-apis</a> .
 
 <br>
 <br>
 
-Yelp GraphQL documentation : <a href="https://www.yelp.com/developers/graphql/guides/intro">https://www.yelp.com/developers/graphql/guides/intro</a>
+Yelp GraphQL documentation : <a href="https://www.yelp.com/developers/graphql/guides/intro" target="_blank">https://www.yelp.com/developers/graphql/guides/intro</a>
 
 <br>
 <br>
