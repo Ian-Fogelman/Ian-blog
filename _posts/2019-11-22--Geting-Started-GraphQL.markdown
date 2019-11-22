@@ -63,7 +63,7 @@ In the example below I put the restful API that a subquery would come from. Noti
     		  formatted_address
     		}
     
-    #https://api.yelp.com/v3/transactions/{transaction_type}/search
+#https://api.yelp.com/v3/transactions/{transaction_type}/search
     transactions
     {
       restaurant_reservations {
@@ -71,7 +71,7 @@ In the example below I put the restful API that a subquery would come from. Noti
       }
     }
     
-		#https://api.yelp.com/v3/businesses/{id}/reviews
+#https://api.yelp.com/v3/businesses/{id}/reviews
     reviews{
       rating
       text
