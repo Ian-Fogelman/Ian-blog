@@ -35,6 +35,11 @@ Now not all API's inheritly support graph QL, but there is an extensive list of 
 
 <br>
 <br>
+
+Yelp GraphQL documentation : https://www.yelp.com/developers/graphql/guides/intro
+
+<br>
+<br>
 You can also code up your own, but for this example I will be using the yelp GraphQL service.
 In the example below I put the restful API that a subquery would come from. Notice that instead of querying an entire API end point and joining that data all back together you can write the shorthand graphQL query (essentially JSON format) to extract your data. The idea is efficiency behind your efforts, doing more with less code.
 
