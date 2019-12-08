@@ -45,6 +45,11 @@ author: Ian Fogelman # Add name author (optional)
           <td>anaconda upload "Stock Analysis.ipynb"</td>
           <td>How to upload a notebook to Cloud Anaconda</td>
         </tr>
+	<tr>
+          <td>4</td>
+          <td>https://app.quickdatabasediagrams.com/#/</td>
+          <td>Database schema tool</td>
+        </tr>          
       </tbody>
     </table>
   </div>
