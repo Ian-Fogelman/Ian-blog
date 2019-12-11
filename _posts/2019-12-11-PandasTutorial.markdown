@@ -30,4 +30,6 @@ Common and useful cases for Pandas:
 <br>
 <br>
 
-<iframe class="container-fluid" src="https://anaconda.org/ianfogelman/pandas-tutorial/notebook" />
+<div class="container-fluid">
+<iframe src="https://anaconda.org/ianfogelman/pandas-tutorial/notebook" />
+</div>
