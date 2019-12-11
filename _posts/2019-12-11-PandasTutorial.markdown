@@ -21,4 +21,4 @@ A quick example of how to create a SQLAlchemy engine connection string in python
 <br>
 <br>
 
-<iframe src="https://anaconda.org/ianfogelman/pandas-tutorial/notebook" />
+<iframe width="100%" src="https://anaconda.org/ianfogelman/pandas-tutorial/notebook" />
