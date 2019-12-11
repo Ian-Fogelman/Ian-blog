@@ -17,7 +17,10 @@ author: Ian Fogelman # Add name author (optional)
 <br>
 <br>
 
-A quick example of how to create a SQLAlchemy engine connection string in python.
+Common and useful cases for Pandas:
+
+https://anaconda.org/ianfogelman/pandas-tutorial/notebook
+
 <br>
 <br>
 
