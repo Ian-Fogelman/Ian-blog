@@ -26,5 +26,5 @@ Common and useful cases for Pandas:
 <br>
 
 <div width="100%" height="1000px">
-<iframe width="100%" src="https://anaconda.org/ianfogelman/pandas-tutorial/notebook" />
+<iframe width="100%" height="1000px" src="https://anaconda.org/ianfogelman/pandas-tutorial/notebook" />
 </div>
