@@ -19,7 +19,7 @@ author: Ian Fogelman # Add name author (optional)
 
 Common and useful cases for Pandas:
 
-https://anaconda.org/ianfogelman/pandas-tutorial/notebook
+<a href="https://anaconda.org/ianfogelman/pandas-tutorial/notebook" target="_blank"> Link </a>
 
 <br>
 <br>
