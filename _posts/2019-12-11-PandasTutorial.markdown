@@ -24,4 +24,4 @@ Common and useful cases for Pandas:
 <br>
 <br>
 
-<iframe width="100%" height="100%" src="https://anaconda.org/ianfogelman/pandas-tutorial/notebook" />
+<iframe width="100%" height="1000px" src="https://anaconda.org/ianfogelman/pandas-tutorial/notebook" />
