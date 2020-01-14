@@ -14,7 +14,7 @@ author: Ian Fogelman # Add name author (optional)
 Hello There!
 <br>
 <br>
-Today I was faced with a w task of diseminating sequence of events in a report, so I thought I would share how I approached to task.
+Today I was faced with a task of diseminating sequence of events in a report, so I thought I would share how I approached the task.
 <br>
 <br>
 
@@ -22,7 +22,7 @@ The Rexy can be found here : <a href="https://rextester.com/AVTOWD47990" target=
 
 <br>
 <br>
-Using window functions such as ROW_NUMBER(), RANK(), DENSE_RANK() and NTILE() we can gain insight into how data are ranked amounts a result set. Each of these functions have specific use cases, rank and dense rank treat ties amounts data slightly differently while ROW_NUMBER() is useful for assigning a ID field to a result set if for some reason one is not already present.
+Using window functions such as ROW_NUMBER(), RANK(), DENSE_RANK() and NTILE() we can gain insight into how data are ranked amoung a result set. Each of these functions have specific use cases, rank and dense rank treat ties amoungst data slightly differently while ROW_NUMBER() is useful for assigning a ID field to a result set if for some reason one is not already present.
 
 <br>
 <br>
