@@ -144,21 +144,28 @@ This will produce the result set
           <td>1</td>
           <td>1</td>
           <td>1</td>
-		  <td>18</td>
+	  <td>18</td>
         </tr>
-		<tr>
+	<tr>
           <td>2</td>
           <td>2</td>
           <td>2</td>
           <td>1</td>
-		  <td>23</td>
+	  <td>23</td>
         </tr>
-		<tr>
+	<tr>
           <td>3</td>
           <td>3</td>
           <td>3</td>
           <td>2</td>
 	  <td>28</td>
+        </tr>
+	<tr>
+          <td>4</td>
+          <td>4<td>
+          <td>4</td>
+          <td>2</td>
+	  <td>30</td>
         </tr>
 	<tr>
           <td>5</td>
@@ -199,5 +206,7 @@ This will produce the result set
     </table>
   </div>
 
+<br>
+<br>
 
 https://rextester.com/AVTOWD47990
