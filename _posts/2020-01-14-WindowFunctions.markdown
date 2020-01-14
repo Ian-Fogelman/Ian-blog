@@ -11,10 +11,18 @@ author: Ian Fogelman # Add name author (optional)
 ---
 <br>
 <br>
-This question arose on the SO forum some months ago.
+Hello There!
 <br>
 <br>
-![Before](/assets/img/Stuff1.PNG)
+Today I was faced with a w task of diseminating sequence of events in a report, so I thought I would share how I approached to task.
+<br>
+<br>
+Using window functions such as ROW_NUMBER(), RANK(), DENSE_RANK() and NTILE() we can gain insight into how data are ranked amounts a result set. Each of these functions have specific use cases, rank and dense rank treat ties amounts data slightly differently while ROW_NUMBER() is useful for assigning a ID field to a result set if for some reason one is not already present.
+
+<br>
+<br>
+Have a look at the data below which has 4 fields, OrderId,CustId,Val and OrderDate. Typically you will be compring values based on a sequence of a date field. In this example we will apply first the window functions and secondly offset window functions.
+
 
   <div class="container-fluid">
     <table class="datatable table table-hover table-bordered">
