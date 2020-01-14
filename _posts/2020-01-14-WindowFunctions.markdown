@@ -209,4 +209,92 @@ This will produce the result set
 <br>
 <br>
 
+
+Lets Examine row numbers 6,7 and 8 to gain a better understanding of the window functions.
+
+<br>
+<br>
+
+
+<div class="container-fluid">
+    <table class="datatable table table-hover table-bordered">
+      <thead>
+        <tr>
+          <th>RowNum</th>
+          <th>Rank</th>
+          <th>Dense_Rank</th>
+          <th>Ntile</th>
+	  <th>Val</th>
+        </tr>
+      </thead>
+      <tfoot>
+      </tfoot>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+	  <td>18</td>
+        </tr>
+	<tr>
+          <td>2</td>
+          <td>2</td>
+          <td>2</td>
+          <td>1</td>
+	  <td>23</td>
+        </tr>
+	<tr>
+          <td>3</td>
+          <td>3</td>
+          <td>3</td>
+          <td>2</td>
+	  <td>28</td>
+        </tr>
+	<tr>
+          <td>4</td>
+          <td>4</td>
+          <td>4</td>
+          <td>2</td>
+	  <td>30</td>
+        </tr>
+	<tr>
+          <td>5</td>
+          <td>5</td>
+          <td>5</td>
+          <td>3</td>
+	  <td>33</td>
+        </tr>
+	<tr style="background-color:yellow;">
+          <td>6</td>
+          <td>6</td>
+          <td>6</td>
+          <td>3</td>
+	  <td>36</td>
+        </tr>
+	<tr style="background-color:yellow;">
+          <td>7</td>
+          <td>6</td>
+          <td>6</td>
+          <td>3</td>
+	  <td>36</td>
+        </tr>
+	<tr style="background-color:yellow;">
+          <td>8</td>
+          <td>8</td>
+          <td>7</td>
+          <td>4</td>
+	  <td>40</td>
+        </tr>
+	<tr>
+          <td>9</td>
+          <td>9</td>
+          <td>8</td>
+          <td>5</td>
+	  <td>45</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
 https://rextester.com/AVTOWD47990
