@@ -297,4 +297,23 @@ Lets Examine row numbers 6,7 and 8 to gain a better understanding of the window 
     </table>
   </div>
 
+<br>
+<br>
+
+Firstly lets cover NTILE(), NTILE accepts an integer parameter which is the number of groups to partition by. For example I choose 5, so we can mod the number of rows by that parameter 9 % 5 = 1, we will have 4 equal groups (with 2 in this case) and 1 odd group with only one.
+
+<br>
+<br>
+
+Next Rank, Rank will honor the ties in our data for example for rows 6 and 7 we have val of 36. Notice that rank honors the tie by assigning 6 to both rows but then skips the next rank and jumps straight to 8. This is essentially the different between RANK() and DENSE_RANK()
+
+<br>
+<br>
+
+Lastly Dense_Rank will honor the ties in data and keep the sequence of rank instead of jumping to the next value. So instead of jumping to rank 8 for row number 8, it is assigned a dense_rank of 7, dense_rank will always have contigious values.
+
+<br>
+<br>
+
+
 https://rextester.com/AVTOWD47990
