@@ -162,7 +162,7 @@ This will produce the result set
         </tr>
 	<tr>
           <td>4</td>
-          <td>4<td>
+          <td>4</td>
           <td>4</td>
           <td>2</td>
 	  <td>30</td>
