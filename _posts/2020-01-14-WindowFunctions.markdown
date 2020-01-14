@@ -133,7 +133,7 @@ This will produce the result set
           <th>Rank</th>
           <th>Dense_Rank</th>
           <th>Ntile</th>
-	  <th>Val<th>
+	  <th>Val</th>
         </tr>
       </thead>
       <tfoot>
