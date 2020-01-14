@@ -160,7 +160,6 @@ This will produce the result set
           <td>2</td>
 	  <td>28</td>
         </tr>
-
 	<tr>
           <td>5</td>
           <td>5</td>
