@@ -97,12 +97,114 @@ Have a look at the data below which has 4 fields, OrderId,CustId,Val and OrderDa
     </table>
   </div>
 
+<br>
+<br>
+Lets first apply the window function query to our data, this will show how each treats data slightly differently.
+
+<br>
+<br>
 
 {% highlight SQL %}
 
+SELECT 
+ROW_NUMBER() OVER(ORDER BY VAL) AS ROWNUM,
+RANK() OVER(ORDER BY VAL) AS RANK,
+DENSE_RANK() OVER(ORDER BY VAL) AS DENSE_RANK,
+NTILE(5) OVER(ORDER BY VAL) AS NTILE,
+VAL
+
+FROM TEMP_ORDERVALUES
+ORDER BY VAL
 {% endhighlight %}
 
 <br>
 <br>
+
+This will produce the result set
+
+<br>
+<br>
+
+<div class="container-fluid">
+    <table class="datatable table table-hover table-bordered">
+      <thead>
+        <tr>
+          <th>RowNum</th>
+          <th>Rank</th>
+          <th>Dense_Rank</th>
+          <th>Ntile</th>
+		  <th>Val<th>
+        </tr>
+      </thead>
+      <tfoot>
+      </tfoot>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+		  <td>18</td>
+        </tr>
+		<tr>
+          <td>2</td>
+          <td>2</td>
+          <td>2</td>
+          <td>1</td>
+		  <td>23</td>
+        </tr>
+		<tr>
+          <td>3</td>
+          <td>3</td>
+          <td>3</td>
+          <td>2</td>
+		  <td>28</td>
+        </tr>
+		<tr>
+          <td>4</td>
+          <td>4<td>
+          <td>4</td>
+          <td>2</td>
+		  <td>30</td>
+        </tr>
+		<tr>
+          <td>5</td>
+          <td>5</td>
+          <td>5</td>
+          <td>3</td>
+		  <td>33</td>
+        </tr>
+		<tr>
+          <td>6</td>
+          <td>6</td>
+          <td>6</td>
+          <td>3</td>
+		  <td>36</td>
+        </tr>
+		<tr>
+          <td>7</td>
+          <td>6</td>
+          <td>6</td>
+          <td>3</td>
+		  <td>36</td>
+        </tr>
+		<tr>
+          <td>8</td>
+          <td>8</td>
+          <td>7</td>
+          <td>4</td>
+		  <td>40</td>
+        </tr>
+		<tr>
+          <td>9</td>
+          <td>9</td>
+          <td>8</td>
+          <td>5</td>
+		  <td>45</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
 
 https://rextester.com/AVTOWD47990
