@@ -23,6 +23,8 @@ Using window functions such as ROW_NUMBER(), RANK(), DENSE_RANK() and NTILE() we
 <br>
 Have a look at the data below which has 4 fields, OrderId,CustId,Val and OrderDate. Typically you will be compring values based on a sequence of a date field. In this example we will apply first the window functions and secondly offset window functions.
 
+<br>
+<br>
 
   <div class="container-fluid">
     <table class="datatable table table-hover table-bordered">
