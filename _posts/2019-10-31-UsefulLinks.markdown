@@ -54,27 +54,3 @@ author: Ian Fogelman # Add name author (optional)
     </table>
   </div>
   
-  {% highlight Python %}
-  from itertools import combinations
-
-def permute(nums):
-  result_perms = [[]]
-  for n in nums:
-    new_perms = []
-    for perm in result_perms:
-      for i in range(len(perm)+1):
-        new_perms.append(perm[:i] + [n] + perm[i:])
-        result_perms = new_perms
-  return result_perms
-permute([1,2,3])
-
-
-from itertools import permutations 
-  
-# Get all permutations of [1, 2, 3] 
-perm = permutations([1, 2, 3]) 
-  
-# Print the obtained permutations 
-for i in list(perm): 
-    print(i) 
-{% endhighlight %}
