@@ -432,4 +432,5 @@ Here is the result set from the query above, notice that when the custID is the 
 <br>
 <br>
 
+#https://rextester.com/PHHX28464
 
