@@ -3,7 +3,7 @@ layout: post
 title:  Validating UTF8 Errors
 date:   2020-02-05
 description: Validating UTF8 Errors
-img: py.png # Add image post (optional)
+img: sq.png # Add image post (optional)
 tags: [Python]
 
 datatable: true
