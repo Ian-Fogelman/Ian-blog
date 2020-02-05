@@ -16,6 +16,8 @@ author: Ian Fogelman # Add name author (optional)
 
 Recently a problem arouse in a production database of non UTF-8 encodable characters appearing in a name field. This can theoretically can happen in any user entered front end.
 It may or may not be an immediate problem, eventually it can cause errors in data exports or other processes, so today I will share how I solved this issue with some dynamic SQL.
+<br>
+<br>
 https://rextester.com/PHHX28464
 <br>
 <br>
