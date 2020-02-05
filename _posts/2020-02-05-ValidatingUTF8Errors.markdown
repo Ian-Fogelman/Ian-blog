@@ -18,7 +18,7 @@ Recently a problem arouse in a production database of non UTF-8 encodable charac
 It may or may not be an immediate problem, eventually it can cause errors in data exports or other processes, so today I will share how I solved this issue with some dynamic SQL.
 <br>
 <br>
-https://rextester.com/PHHX28464
+<a href="https://rextester.com/PHHX28464" target="_blank"> Rexy </a>
 <br>
 <br>
 This will be done by 4 temp tables, Temp_A is the table that will hold the references to tables and columns, Temp_B and Temp_C will hold example data with non-UTF8 characters.
