@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Validating UTF8 Errors
-date:   2019-12-11
+date:   2020-02-05
 description: Validating UTF8 Errors
 img: py.png # Add image post (optional)
 tags: [Python]
