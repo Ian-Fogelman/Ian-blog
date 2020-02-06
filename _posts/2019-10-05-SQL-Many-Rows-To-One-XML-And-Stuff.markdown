@@ -47,3 +47,21 @@ ORDER BY 1
 
 https://rextester.com/YLIJQ30828
 
+<br>
+<br>
+Example of compiling a comma seperated list from a <u>single</u> table.
+<br>
+<br>
+
+{% highlight SQL %}
+
+SELECT STUFF((
+SELECT ',' + EMPLOYEEID FROM [#TEMP_A]
+FOR XML PATH('')), 1, 1, '') as Employees
+
+{% endhighlight %}
+
+
+
+https://rextester.com/XBUW63425
+
