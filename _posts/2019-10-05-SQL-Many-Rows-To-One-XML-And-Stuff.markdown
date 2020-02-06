@@ -45,7 +45,7 @@ ORDER BY 1
 <br>
 <br>
 
-https://rextester.com/YLIJQ30828
+<a href="https://rextester.com/YLIJQ30828" target="_blank">https://rextester.com/YLIJQ30828</a>
 
 <br>
 <br>
@@ -63,5 +63,5 @@ FOR XML PATH('')), 1, 1, '') as Employees
 
 
 
-https://rextester.com/XBUW63425
+<a href="https://rextester.com/XBUW63425" target="_blank"> https://rextester.com/XBUW63425</a>
 
