@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Automatically detecting schema changes
-date:   2020-02-11
+date:   2020-02-10
 description: How to easily detect which database tables have changed.
 img: sq.png # Add image post (optional)
 tags: [SQL,ChangeDetection]
@@ -60,7 +60,7 @@ To accomplish this we will utalize the STUFF and For XML path trick seperating e
 <br>
 
 {% highlight sql %}
-              SELECT ','+ CAST(SUB.NAME AS VARCHAR(MAX)) AS [text()]
+SELECT ','+ CAST(SUB.NAME AS VARCHAR(MAX)) AS [text()]
                         FROM (
 						SELECT ROW_NUMBER() OVER(PARTITION BY 1 ORDER BY COLUMN_ID) AS ID,
 tablename + ' | ' + name + ' | ' + CAST(column_id AS VARCHAR(MAX)) + ' | ' + CAST(max_length AS VARCHAR(MAX)) + ' | ' + ColType AS [Name] 
