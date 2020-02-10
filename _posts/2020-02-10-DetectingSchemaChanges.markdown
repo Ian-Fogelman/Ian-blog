@@ -179,5 +179,6 @@ As you can see for the first run we get a check sum for the first run is 55FD251
 The second run is 4E1BA8DA9302CE7DD21949454D39F22A.
 <br> 
 <br>
-This technique will work for any column changes, if the order datatype, length changes the checksum will be different!
+This technique will work for any column changes, if the order, datatype or length changes the checksum will be different!
+You could expand this function to alert via teams or an email notification to keep you in the know when these changes occur.
 
