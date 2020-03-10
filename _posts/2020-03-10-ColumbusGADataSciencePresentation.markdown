@@ -19,12 +19,15 @@ author: Ian Fogelman # Add name author (optional)
 <br>
 <br>
 
-Have you ever been blind sided by a database schema change in your production enviorment? It is no fun!
-You may work in a enviorment when changes are few and far between or hundreds per day, either way it would be great to automatically detect changes.
-Today I am going to explain how to do just that! Lets get started, here is the <a href="https://rextester.com/BNWS86838" target="_blank">Full Rexy</a>.
+Jupyter Notebook:
 <br>
-<br>
+https://anaconda.org/IanFogelman/aws-demo/notebook
 
+<br>
+<br>
+Full Project :
+<br>
+https://github.com/Ian-Fogelman/ian-blog/raw/master/assets/img/Getting%20Started%20With%20AWS.zip
 <br>
 <br>
 
