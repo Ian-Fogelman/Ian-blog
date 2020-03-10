@@ -19,7 +19,7 @@ author: Ian Fogelman # Add name author (optional)
 
 Have you ever been blind sided by a database schema change in your production enviorment? It is no fun!
 You may work in a enviorment when changes are few and far between or hundreds per day, either way it would be great to automatically detect changes.
-Today I am going to explain how to do just that! Lets get started, here is the <a href="" target="_blank">Full Rexy</a>.
+Today I am going to explain how to do just that! Lets get started, here is the <a href="https://rextester.com/BNWS86838" target="_blank">Full Rexy</a>.
 <br>
 <br>
 
