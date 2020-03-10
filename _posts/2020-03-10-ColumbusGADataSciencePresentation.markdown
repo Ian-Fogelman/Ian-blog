@@ -16,16 +16,9 @@ author: Ian Fogelman # Add name author (optional)
 
 <br>
 <br>
-
-Jupyter Notebook:
-<br>
-https://anaconda.org/IanFogelman/aws-demo/notebook
-
-<br>
-<br>
 Full Project :
 <br>
-https://github.com/Ian-Fogelman/ian-blog/raw/master/assets/img/Getting%20Started%20With%20AWS.zip
+<a href="https://github.com/Ian-Fogelman/ian-blog/raw/master/assets/img/Getting%20Started%20With%20AWS.zip" target="_blank">Full Project</a>
 <br>
 <br>
 
