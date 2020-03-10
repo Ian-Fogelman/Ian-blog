@@ -3,7 +3,7 @@ layout: post
 title:  ColumbusGADataSciencePresentation
 date:   2020-03-10
 description: 2020-03-10-ColumbusGADataSciencePresentation
-img: aws.png # Add image post (optional)
+img: AWS.png # Add image post (optional)
 tags: [AWS]
 
 datatable: true
