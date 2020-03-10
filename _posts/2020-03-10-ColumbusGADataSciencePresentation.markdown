@@ -18,7 +18,7 @@ author: Ian Fogelman # Add name author (optional)
 <br>
 Jupter Notebook :
 <br>
-<a href="https://anaconda.org/IanFogelman/aws-demo/notebook" target="_blank">Full Project</a>
+<a href="https://anaconda.org/IanFogelman/aws-demo/notebook" target="_blank">Jupter Notebook</a>
 <br>
 <br>
 Full Project :
