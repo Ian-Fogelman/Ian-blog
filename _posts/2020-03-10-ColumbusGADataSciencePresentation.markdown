@@ -30,4 +30,4 @@ Today I am going to explain how to do just that! Lets get started, here is the <
 
 {% highlight SQL %}
 
-{% end highlight%}
+{% endhighlight %}
