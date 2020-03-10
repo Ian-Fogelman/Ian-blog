@@ -168,13 +168,12 @@ SELECT DBO.FN_RETURN_CHECK_SUM('[dbo].[TEMP_A]')
 
 ALTER TABLE TEMP_A
 ADD Email varchar(255);
---AFTER ALTER CHECK SUM OF 55FD251F00F8E1EB7A2B7DCBF75A3D30
+--AFTER ALTER CHECK SUM OF 4E1BA8DA9302CE7DD21949454D39F22A
 SELECT DBO.FN_RETURN_CHECK_SUM('[dbo].[TEMP_A]')
 
 {% endhighlight %}
 
-As you can see for the first run we get a check sum for the 
-first run is 55FD251F00F8E1EB7A2B7DCBF75A3D30
+As you can see for the first run we get a check sum for the first run is 55FD251F00F8E1EB7A2B7DCBF75A3D30
 <br> 
 <br>
 The second run is 4E1BA8DA9302CE7DD21949454D39F22A.
