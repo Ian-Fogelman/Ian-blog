@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  ColumbusGADataSciencePresentation
+title:  Columbus GA DataScience Presentation
 date:   2020-03-10
 description: 2020-03-10-ColumbusGADataSciencePresentation
 img: AWS.png # Add image post (optional)
