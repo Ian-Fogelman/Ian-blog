@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Pytnamic Python
+title:  Dynamic Python
 date:   2020-04-08
 description: 2020-04-08-Dynamic Python
 img: py.png # Add image post (optional)
