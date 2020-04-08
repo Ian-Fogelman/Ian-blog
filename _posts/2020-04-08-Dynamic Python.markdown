@@ -4,7 +4,7 @@ title:  Dynamic Python
 date:   2020-04-08
 description: 2020-04-08-Dynamic Python
 img: py.png # Add image post (optional)
-tags: [Python Dynamic]
+tags: [Dynamic Python]
 
 datatable: true
 author: Ian Fogelman # Add name author (optional)
