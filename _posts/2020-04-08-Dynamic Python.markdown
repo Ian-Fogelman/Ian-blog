@@ -70,7 +70,7 @@ This same functionality is achievable in Python, here is a code sample :
 <br>
 <br>
 
-{% highlight SQL %}
+{% highlight Python %}
 
 prog = 'print("The sum of 5 and 10 is", (5+10))'
 exec(prog)
