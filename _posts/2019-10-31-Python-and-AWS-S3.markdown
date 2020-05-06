@@ -52,8 +52,9 @@ Now that you have a client and secret, you can optionally store the keys in an e
 {% highlight Python %}
 import os
 
-os.environ['awsAccessKey'] = 'xxxxxx'
-os.environ['awsSecretKey'] = 'yyyyyy'
+
+os.getenv('awsAccessKey')
+os.getenv('awsSecretKey')
 
 {% endhighlight %}
 
@@ -119,3 +120,6 @@ csv_string = body.read().decode('utf-8')
 
 df = pd.read_csv(StringIO(csv_string))
 {% endhighlight %}
+
+os.environ['awsAccessKey'] = 'xxxxxx'
+os.environ['awsSecretKey'] = 'yyyyyy'
