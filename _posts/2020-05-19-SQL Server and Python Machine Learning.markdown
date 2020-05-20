@@ -17,7 +17,7 @@ author: Ian Fogelman # Add name author (optional)
 
 <br>
 <br>
-Today we will be utalizing a new feature in 2017+ SQL Server enviornments, machine learning via Python native script execution. In this tutorial we will recap how to load a Pickle file into a SQL server database stored as binary data. Retreive that file and load it as a machine learning model and apply the model predictions to our SQL Server data. So the steps to achieve our predicts are as follows:
+Today we will be utalizing a new feature in 2017+ SQL Server enviornments, machine learning via Python native script execution. In this tutorial we will recap how to load a Pickle file into a SQL server database stored as binary data. Retreive that file and load it as a machine learning model and apply the model predictions to our SQL Server data. The steps to achieve our predicts are as follows:
 
 <br>
 <br>
@@ -38,14 +38,18 @@ VI. Compare the result set from the model to our data
 <br>
 <br>
 Files : <br>
-Iris.csv<br>
+<strong>Iris.csv<br>
 IrisClassifier.pkl<br>
-ML Init.sql
+ML Init.sql</strong>
 
 <br>
 <br>
 
 I. First step is we create a database and a table to store our machine learning logic
+
+<br>
+<br>
+
 {% highlight SQL %}
 
 CREATE DATABASE [ML]
