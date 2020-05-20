@@ -34,6 +34,9 @@ VI. Compare the result set from the model to our data
 
 
 <a href="https://github.com/Ian-Fogelman/ian-blog/raw/master/assets/files/ML%20Init.zip" target="_blank">ML Init.zip</a>
+
+<br>
+<br>
 Files : <br>
 Iris.csv<br>
 IrisClassifier.pkl<br>
