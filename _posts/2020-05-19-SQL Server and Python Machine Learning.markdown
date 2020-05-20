@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title:  SQL Server and Python Machine Learning
@@ -10,6 +9,7 @@ tags: [Machine Learning, SQL Server, Python, Pandas, SciKitLearn]
 datatable: true
 author: Ian Fogelman # Add name author (optional)
 ---
+
 <meta property="og:title" content="Dynamic Python">
 <meta property="og:description" content="A blog by Ian Fogelman.">
 <meta property="og:image" content="https://repository-images.githubusercontent.com/190807493/a3610e80-bed1-11e9-87ac-2a4f0aa3b2ee">
@@ -18,7 +18,7 @@ author: Ian Fogelman # Add name author (optional)
 <br>
 <br>
 <br>
-Many times in programming you need to encorporate dynamic programming. Meaning that you want to apply a variable or many variables into a programming statement and run it. This is a pretty common need and can be achieved in MS SQL as follows: 
+Today we will be utalizing the new feature in 2017+ SQL Server enviornments, machine learning via Python native script execution.
 <br>
 <br>
 <br>
