@@ -72,7 +72,7 @@ GO
 
 {% highlight SQL %}
 {% endhighlight %}
-II. Next we need to load the Iris data from our csv file into a table in our new database, lets create the table in TSQL and utalize a bulk insert command.
+II. Next we need to load the Iris data from our csv file into a table in our new database, lets create the table in TSQL and utilize a bulk insert command.
 
 <br>
 <br>
