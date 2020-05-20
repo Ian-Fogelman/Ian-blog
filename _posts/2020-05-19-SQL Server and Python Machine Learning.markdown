@@ -30,9 +30,13 @@ VI. Compare the result set from the model to our data
 <br>
 <br>
 
-Files : Iris.csv assets/files/Iris.csv
-	ML Init.sql assets/files/Iris.csv
-<br>
+
+<a href="https://github.com/Ian-Fogelman/ian-blog/raw/master/assets/files/ML%20Init.zip" target="_blank">ML Init.zip</a>
+Files : <br>
+Iris.csv<br>
+IrisClassifier.pkl<br>
+ML Init.sql
+
 <br>
 <br>
 
@@ -242,5 +246,7 @@ Now join the results back to the original to assess model performance!
 		ON PR.ID = IR.ID) AS X
 		
 {% endhighlight %}
+<br>
+<br>
 
 There we have it our first ML model trained in Python, stored in SQL server and executed via a stored procedure. So further interesting applications for this approach would be to build a SSRS report to capture the models predictions to stake holders. Also to keep advancing the models and "check them into" the sql database. We can easily keep a running talley of model performance because all of the models are stored in that table Ex Iris Model V1, Iris Model Winter, Iris Model 2020. 
