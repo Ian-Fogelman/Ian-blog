@@ -144,7 +144,7 @@ SELECT * FROM ML_Models
 <br>
 <br>
 
-V. Next we need a stored procedure that will pick up the binary stored in our table and apply the model prediction to our data.
+IV. Next we need a stored procedure that will pick up the binary stored in our table and apply the model prediction to our data.
 To do this we use a combination of the input_data_1 input_data_name and params keyword arguments for our stored procedure.
 
 
@@ -190,7 +190,7 @@ GO
 <br>
 <br>
 
-VI. Lastly we create a temp table to hold the results from our newly predicting stored proc and join our predicted data back to the original data set and see how it performed.
+V. Now we create a temp table to hold the results from our newly predicting stored proc and join our predicted data back to the original data set and see how it performed.
 
 <br>
 <br>
@@ -210,7 +210,7 @@ EXEC SPX_PY_PREDICT_IRIS 'Iris Model'
 <br>
 <br>
 
-Now join the results back to the original to assess model performance!
+VI. Now join the results back to the original to assess model performance!
 
 <br>
 <br>
