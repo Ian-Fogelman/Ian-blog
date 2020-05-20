@@ -97,7 +97,7 @@ III. Next we must load our persisted model logic from a pickle file. Pickle is a
 
 
 {% highlight SQL %}
--PROC TO LOAD PKL AS BINARY
+--PROC TO LOAD PKL AS BINARY
 CREATE PROCEDURE SPX_LOAD_MODEL_FROM_PICKLE (@PicklePath VARCHAR(MAX),@trained_model varbinary(max) OUTPUT)
 AS
 BEGIN
@@ -128,6 +128,9 @@ INSERT INTO ML_Models (model_name, model) VALUES('Iris Model', @model);
 SELECT * FROM ML_Models
 
 {% endhighlight %}
+
+<br>
+<br>
 
 V. Next we need a stored procedure that will pick up the binary stored in our table and apply the model prediction to our data.
 To do this we use a combination of the input_data_1 input_data_name and params keyword arguments for our stored procedure.
@@ -174,8 +177,11 @@ GO
 
 <br>
 <br>
+
 VI. Lastly we create a temp table to hold the results from our newly predicting stored proc and join our predicted data back to the original data set and see how it performed.
 
+<br>
+<br>
 
 {% highlight SQL %}
 IF OBJECT_ID('TEMPDB..#PRED_RESULTS') IS NOT NULL DROP TABLE #PRED_RESULTS
@@ -188,6 +194,9 @@ PREDICTEDVAL INT
 INSERT INTO #PRED_RESULTS
 EXEC SPX_PY_PREDICT_IRIS 'Iris Model'
 {% endhighlight %}
+
+<br>
+<br>
 
 Now join the results back to the original to assess model performance!
 
@@ -234,3 +243,4 @@ Now join the results back to the original to assess model performance!
 		
 {% endhighlight %}
 
+There we have it our first ML model trained in Python, stored in SQL server and executed via a stored procedure. So further interesting applications for this approach would be to build a SSRS report to capture the models predictions to stake holders. Also to keep advancing the models and "check them into" the sql database. We can easily keep a running talley of model performance because all of the models are stored in that table Ex Iris Model V1, Iris Model Winter, Iris Model 2020. 
