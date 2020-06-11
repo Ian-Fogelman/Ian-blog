@@ -75,6 +75,11 @@ This same functionality is achievable in Python, here is a code sample :
 prog = 'print("The sum of 5 and 10 is", (5+10))'
 exec(prog)
 #The sum of 5 and 10 is 15
+
+expression = '5 + 3 * a'
+a = 5
+eval(expression)
+
 {% endhighlight %}
 
 <br>
