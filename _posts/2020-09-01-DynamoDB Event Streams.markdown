@@ -104,9 +104,10 @@ Solution – Step 3 Create the Python Virtual Env
 Next, we need to create a virtual environment that our AWS – Lambda function will use to send data to our slack channel. Create a Folder Structure to hold your environment such as: 
 <br>
 <br>
-{% highlight Python %}
-C:\VirtualEnvs 
-Open an Admin Command Prompt Window and issue the following commands :
+#Open an Admin Command Prompt Window and issue the following commands :
+
+{% highlight CMD %}
+
 cd C:\VirtualEnvs
 python -m venv SlackNotifier
 cd C:\VirtualEnvs\SlackNotifier\Scripts
