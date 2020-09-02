@@ -3,7 +3,7 @@ layout: post
 title:  DynamoDB Event Streams
 date:   2020-09-01
 description: 2020-09-01-DynamoDB Event Streams
-img: aws.png # Add image post (optional)
+img: AWS.png # Add image post (optional)
 tags: [Python, AWS, DynamoDB, EventStreams,Lambda]
 
 datatable: true
