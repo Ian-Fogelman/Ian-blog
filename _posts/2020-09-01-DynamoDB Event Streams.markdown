@@ -18,9 +18,8 @@ author: Ian Fogelman # Add name author (optional)
 <br>
 <br>
 
-Intro to DynamoDB Event Streams
+An Intro to DynamoDB Event Streams
 
-Problem
 You are looking for a database endpoint that has a very quick response time is schema less and can alert you when data changes. For this tip we will implement this solution using AWS – DynamoDB, DynamoDB is AWS’s schema less database solution. In This tip we take a look at how to implement a DynamoDB table, build a lambda function that will alert our slack channel when data in that table is changed.
 <br>
 <br>
@@ -315,11 +314,7 @@ Enter a UserId and click Save.
 ![](/assets/img/DES_image36.png)
 <br>
 <br>
-And viola, if everything has been configured correctly, you will get a message inside your slack channel indicating a new user has signed up!
+If everything has been configured correctly, you will get a message inside your slack channel indicating a new user has signed up!
 <br>
 <br> 
-
-Next Steps
-•	The beauty of DynamoDB is that it is schema-less, it provides ultimate flexibility to your data storage requirements. Try and add fields to the DynamoDB table and experiment with this flexibility.
-•	This is a single example of what Lambda has to offer, experiment with the method of creating a virtual environment in Python and see what else you can accomplish (ex : send email, text, custom app integration).
 
