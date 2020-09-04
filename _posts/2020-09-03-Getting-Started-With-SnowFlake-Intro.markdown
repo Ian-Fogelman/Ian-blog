@@ -33,7 +33,7 @@ For these post I am going to assume that you have signed up and stood up your te
 <br>
 <br>
 
-We are going to cover how SnowFlake handles compute,loading some data from S3 into SnowFlake and parsing some JSON data into a flattened table format.
+We are going to cover how SnowFlake handles compute and loading some data from S3 into SnowFlake.
 
 <br>
 <br>
@@ -49,4 +49,50 @@ Compute in SnowFlake is handled by warehouses, warehouses can be sized according
 <h1>Loading Data into SnowFlake</h1>
 <br>
 <br>
+When you choose a source destination to load data from in S3, make sure it matches the region you choose when creating your SnowFlake instance.
+Also make sure that you allow a list object, read bucket permissions and possibly get access in your CORS rules for that bucket.
+<br>
+<br>
+#![](/assets/img/SF2.PNG)
+<br>
+<br>
+
+
+{% highlight SQL %} 
+CREATE DATABASE Debug;
+
+USE DATABASE Debug;
+
+--CREATE TABLE
+CREATE TABLE Customer (
+  Customer_ID string,
+  Customer_Name string ,
+  Customer_Email string ,
+  Customer_City string 
+  );
+  
+--CREATE STAGE
+create or replace stage CustomerStage url='s3://fogeldev-snowflake/';
+
+list @CustomerStage;
+
+--COPY DATA FROM S3
+copy into Customer
+  from s3://fogeldev-snowflake/Customers.csv
+  file_format = (type = csv field_delimiter = ',' skip_header = 1);
+  
+SELECT * FROM Customer;
+
+{% endhighlight %}
+
+
+<br>
+<br>
+
+In the above code we created a database, set the database context, created a table and created a stage from which to load a csv file hosted in a s3: bucket. And copied that csv data into our table.
+
+<br>
+<br>
+
+You can also load data without stages and flatten json formated data in SnowFlake quite easily, which I will cover in future topics.
 
