@@ -22,8 +22,12 @@ Today we will be discussing a new and interesting cloud database technology call
 <br>
 
 SnowFlake is a cloud based data warehouse solution which can be hosted in AWS, Azure or Google Cloud platform.
-Initial trials of SnowFlake get a $400 credit 30 day trial, Snowflake breaks out charges into a credit system by compute and storage.
-You can sign up for a free trial of SnowFlake here. 
+Initial trials of SnowFlake get a $400 credit 30 day trial.
+<br>
+<br>
+
+Snowflake breaks out charges into a credit system by compute and storage.
+You can sign up for a free trial of SnowFlake <a href="https://trial.snowflake.com/" target="_blank">here</a>. 
 
 <br>
 <br>
