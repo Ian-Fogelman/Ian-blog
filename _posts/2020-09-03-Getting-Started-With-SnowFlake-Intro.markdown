@@ -46,7 +46,7 @@ We are going to cover how SnowFlake handles compute and loading some data from S
 <br>
 Compute in SnowFlake is handled by warehouses, warehouses can be sized according to need. For example you may have a warehouse for reporting, and another warehouse for data science query processing. You are not limited by the number of warehouses, these warehouses will consume credits when active and will auto suspend themselves when not in use. All these options can be configured in the Warehouses tab :
 
-#![](/assets/img/SF1.PNG)
+![](/assets/img/SF1.PNG)
 
 <br>
 <br>
@@ -57,7 +57,7 @@ When you choose a source destination to load data from in S3, make sure it match
 Also make sure that you allow a list object, read bucket permissions and possibly get access in your CORS rules for that bucket.
 <br>
 <br>
-#![](/assets/img/SF2.PNG)
+![](/assets/img/SF2.PNG)
 <br>
 <br>
 
