@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  SQL Server and Python Machine Learning
-date:   2020-05-19
-description: 2020-05-19-SQL Server and Python Machine Learning
+title:  SnowFlake-Intro
+date:   2020-09-03
+description: 2020-09-03-SnowFlake-Intro
 img: SF.png # Add image post (optional)
-tags: [Machine Learning, SQL Server, Python, Pandas, SciKitLearn]
+tags: [SnowFlake,SQL,AWS]
 
 datatable: true
 author: Ian Fogelman # Add name author (optional)
