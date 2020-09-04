@@ -93,7 +93,7 @@ SELECT * FROM Customer;
 <br>
 <br>
 
-In the above code we created a database, set the database context, created a table and created a stage from which to load a csv file hosted in a s3: bucket. And copied that csv data into our table.
+In the above code we created a database, set the database context, created a table and created a stage from which to load a csv file hosted in a s3: bucket. And lastly using the stage copied that csv data into our SnowFlake table.
 
 <br>
 <br>
