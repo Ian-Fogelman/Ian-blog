@@ -32,7 +32,7 @@ You can sign up for a free trial of SnowFlake <a href="https://trial.snowflake.c
 <br>
 <br>
 
-For these post I am going to assume that you have signed up and stood up your test instance of SnowFlake.
+For these posts I am going to assume that you have signed up and stood up your test instance of SnowFlake.
 
 <br>
 <br>
