@@ -43,46 +43,114 @@ In this example I am starting in Python 3.7 as my base or root environment, I wi
 <br>
 <br>
 
+First these commands can help show current anaconda enviornments and kernels for J notebooks.
+
+<br>
+<br>
+
+
 conda env list
 jupyter kernelspec list
 
-jupyter kernelspec uninstall unwanted-kernel
 
-#1
-
-conda install nb_conda
-yes
 <br>
 <br>
 
-#2
+Step 1 - Create the Anaconda Envirnment
+
+<br>
+<br>
+
+![](/assets/img/MCE1.PNG)
+<br>
+<br>
+
 conda create -name Python_36 python==3.6
 yes -> yes
 
 <br>
 <br>
 
-#3
+This creates a Anaconda virtual enviornment in the following directory: C:\Users\XXX\Anaconda3\envs
+<br>
+<br>
+![](/assets/img/MCE2.PNG)
+<br>
+<br>
+
+Step 2 - Activate new enviornment and install helper modules
+<br>
+<br>
 activate Python_36
-conda install -c anaconda ipykernel
-yes
-
+<br>
+<br>
+conda install nb_conda -> y
+conda install ipykernel
 <br>
 <br>
 
-
-Next you can add your virtual environment to Jupyter by typing:
-
+Step 3 - Add virtual environment to Jupyter:
+<br>
+<br>
 python -m ipykernel install --user --name=Python_36
+<br>
+<br>
 
-
-#4
 Now restart your jupyter notebook instance by closing the current CMD that is running it and issue "jupyter notebooks" command.
 
+<br>
+<br>
+You should notice two additional kernels available in your dropdown.
+One called Python_36 and Python[conda env:Python_36]
 
+<br>
+<br>
 
+![](/assets/img/MCE3.PNG)
 
+<br>
+<br>
 
+Step 4 - Inside Jupyter notebooks lets create a new notebook under then Python_36 kernel.
+<br>
+<br>
 
+Run the following command to get the version of Python running for that particular notebook.
+<br>
+<br>
+{% highlight Python %} 
+import platform
+print(platform.sys.version)
+{% endhighlight %}
+<br>
+<br>
+You should see a 3.6.XX version of Python returned.
+If you see the same version as your base enviornment try the Python[conda env:Python_36].
+<br>
+<br>
+Now create another Notebook under Python3 and run the same command.
+You should see the base Python version, in my case 3.7.6
+<br>
+<br>
 
+Optionally we may want to clean up unused kernels in both Jupyter notebooks and Anaconda.
+
+<br>
+<br>
+
+Step 5 - (Optional) Kernel and Env cleanup
+<br>
+<br>
+
+If you ever want to remove a kernel from the jupter notebooks, use the following command:
+jupyter kernelspec uninstall xxxx
+
+<br>
+<br>
+
+To remove an envirnment from Anaconda :
+conda env remove -n env_name
+
+<br>
+<br>
 
