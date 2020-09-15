@@ -3,7 +3,7 @@ layout: post
 title:  Managing Conda Environments for Jupyter Notebooks
 date:   2020-09-14
 description: How to build and load conda environments in Jupyter notebooks
-img: py.png # Add image post (optional)
+img: AN.png # Add image post (optional)
 tags: [Machine Learning, SQL Server, Python, Pandas, SciKitLearn]
 
 datatable: true
