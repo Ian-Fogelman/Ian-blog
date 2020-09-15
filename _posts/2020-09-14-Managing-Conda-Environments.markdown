@@ -118,6 +118,11 @@ Step 4 - Inside Jupyter notebooks lets create a new notebook under then Python_3
 Run the following command to get the version of Python running for that particular notebook.
 <br>
 <br>
+
+![](/assets/img/MCE4.PNG)
+<br>
+<br>
+
 {% highlight Python %} 
 import platform
 print(platform.sys.version)
@@ -132,7 +137,9 @@ Now create another Notebook under Python3 and run the same command.
 You should see the base Python version, in my case 3.7.6
 <br>
 <br>
-
+![](/assets/img/MCE5.PNG)
+<br>
+<br>
 Optionally we may want to clean up unused kernels in both Jupyter notebooks and Anaconda.
 
 <br>
@@ -154,3 +161,10 @@ conda env remove -n env_name
 <br>
 <br>
 
+In this post we covered how to create multiple conda Python enviornments and flip between the two.
+We extended that functionaility to Jupyter notebooks so that we can get other package congruenty if a package does not support a specific version of Python.
+Lastly we reviewed how to remove a Python enviornment if we no longer need it in both the Jupyter notebook kernels and Anaconda.
+
+On a closing note you can also view all the current enviornments and packages created from the command line in Anaconda navigator.
+
+![](/assets/img/MCE6.PNG)
