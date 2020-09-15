@@ -48,11 +48,13 @@ First these commands can help show current anaconda enviornments and kernels for
 <br>
 <br>
 
-
+{% highlight Cmd %} 
 conda env list
+{% endhighlight %}
 <br>
+{% highlight Cmd %} 
 jupyter kernelspec list
-
+{% endhighlight %}
 
 <br>
 <br>
@@ -65,8 +67,9 @@ Step 1 - Create the Anaconda Envirnment
 ![](/assets/img/MCE1.png)
 <br>
 <br>
-
+{% highlight Cmd %} 
 conda create -name Python_36 python==3.6
+{% endhighlight %}
 yes -> yes
 
 <br>
@@ -85,8 +88,12 @@ Step 2 - Activate new enviornment and install helper modules
 activate Python_36
 <br>
 <br>
-conda install nb_conda -> y
+{% highlight Cmd %} 
+conda install nb_conda
+{% endhighlight %}
+{% highlight Cmd %} 
 conda install ipykernel
+{% endhighlight %}
 <br>
 <br>
 
