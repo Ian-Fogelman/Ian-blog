@@ -4,7 +4,7 @@ title:  Managing Conda Environments for Jupyter Notebooks
 date:   2020-09-14
 description: How to build and load conda environments in Jupyter notebooks
 img: AN.png # Add image post (optional)
-tags: [Machine Learning, SQL Server, Python, Pandas, SciKitLearn]
+tags: [Anaconda,conda,Environments]
 
 datatable: true
 author: Ian Fogelman # Add name author (optional)
@@ -37,3 +37,47 @@ Today I detail how this can be accomplished step by step.
 
 <br>
 <br>
+
+In this example I am starting in Python 3.7 as my base or root environment, I will build a conda enviornment of 3.6 and emulate that Python version in jupyter notebook.
+
+<br>
+<br>
+
+#1
+
+conda install nb_conda
+yes
+<br>
+<br>
+
+#2
+conda create -name Python_36 python==3.6
+yes -> yes
+
+<br>
+<br>
+
+#3
+
+conda install -c anaconda ipykernel
+yes
+
+<br>
+<br>
+
+
+Next you can add your virtual environment to Jupyter by typing:
+
+python -m ipykernel install --user --name=Python_36
+
+
+#4
+Now restart your jupyter notebook instance by closing the current CMD that is running it and issue "jupyter notebooks" command.
+
+
+
+
+
+
+
+
