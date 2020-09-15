@@ -28,6 +28,10 @@
       {% if post.img == "SF.png" %}
         <a href="{{ root_url }}{{ post.url | prepend: site.baseurl }}" class="recent-item" style="background: url({{"/assets/img/" | prepend: site.baseurl | append : post.img}}) center no-repeat; background-size: cover;"><span style="color:#fff;width:100%;text-align:center;border-radius: 10px;background: #2BB5E9;">{{ post.title }}</span></a>
       {% endif %}
+    
+      {% if post.img == "AN.png" %}
+        <a href="{{ root_url }}{{ post.url | prepend: site.baseurl }}" class="recent-item" style="background: url({{"/assets/img/" | prepend: site.baseurl | append : post.img}}) center no-repeat; background-size: cover;"><span style="color:#fff;width:100%;text-align:center;border-radius: 10px;background: #3EB049;">{{ post.title }}</span></a>
+      {% endif %}
     <!---
     #f1c40f yellow
     #c0392b red
