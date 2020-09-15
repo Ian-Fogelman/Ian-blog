@@ -70,7 +70,6 @@ Step 1 - Create the Anaconda Envirnment
 {% highlight Cmd %} 
 conda create -name Python_36 python==3.6
 {% endhighlight %}
-yes -> yes
 
 <br>
 <br>
@@ -100,7 +99,12 @@ conda install ipykernel
 Step 3 - Add virtual environment to Jupyter:
 <br>
 <br>
+Inside of a CMD prompt or terminal window :
+<br>
+<br>
+{% highlight Cmd %} 
 python -m ipykernel install --user --name=Python_36
+{% endhighlight %}
 <br>
 <br>
 
@@ -158,14 +162,16 @@ Step 5 - (Optional) Kernel and Env cleanup
 <br>
 
 If you ever want to remove a kernel from the jupter notebooks, use the following command:
+{% highlight Cmd %} 
 jupyter kernelspec uninstall xxxx
-
+{% endhighlight %}
 <br>
 <br>
 
 To remove an envirnment from Anaconda :
+{% highlight Cmd %} 
 conda env remove -n env_name
-
+{% endhighlight %}
 <br>
 <br>
 
