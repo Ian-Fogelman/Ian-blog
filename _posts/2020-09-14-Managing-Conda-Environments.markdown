@@ -43,7 +43,7 @@ In this example I am starting in Python 3.7 as my base or root environment, I wi
 <br>
 <br>
 
-First these commands can help show current anaconda enviornments and kernels for J notebooks.
+First these commands can help show current anaconda enviornments and kernels for Jupyter notebooks.
 
 <br>
 <br>
