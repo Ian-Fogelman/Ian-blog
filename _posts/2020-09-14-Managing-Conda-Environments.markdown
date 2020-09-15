@@ -43,6 +43,11 @@ In this example I am starting in Python 3.7 as my base or root environment, I wi
 <br>
 <br>
 
+conda env list
+jupyter kernelspec list
+
+jupyter kernelspec uninstall unwanted-kernel
+
 #1
 
 conda install nb_conda
@@ -58,7 +63,7 @@ yes -> yes
 <br>
 
 #3
-
+activate Python_36
 conda install -c anaconda ipykernel
 yes
 
