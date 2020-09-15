@@ -50,6 +50,7 @@ First these commands can help show current anaconda enviornments and kernels for
 
 
 conda env list
+<br>
 jupyter kernelspec list
 
 
