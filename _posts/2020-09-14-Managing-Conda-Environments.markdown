@@ -18,12 +18,12 @@ author: Ian Fogelman # Add name author (optional)
 <br>
 <br>
 
-Today we take a look at anaconda, not only is anaconda a flavor of Python distribution but it also a powerful enviornment management tool.
+Today we take a look at anaconda, not only is anaconda a flavor of Python distribution but it also a powerful environment management tool.
 
 <br>
 <br>
 
-I am well aware that you can create and manage Python enviornments and install packages into virtual Python enviornments.
+I am well aware that you can create and manage Python environment and install packages into virtual Python environments.
 Recently however the need for me to run my Jupyter notebook instance in a different version of Python arose.
 This can happen do to a particular package not being updated or compaitable with the most recent versions of Python.
 In my case this conflict was caused from the difference in Python 3.7 -> 3.8.
@@ -32,18 +32,18 @@ In my case this conflict was caused from the difference in Python 3.7 -> 3.8.
 <br>
 
 Now I knew that I could just download the previous version of Anaconda so that Python would be 3.7, but this is not the correct answer!
-There is a lot of misleading information or incomplete steps into loading the Anaconda enviornment so that your jupter notebook instance can run it.
+There is a lot of misleading information or incomplete steps into loading the Anaconda environment so that your jupter notebook instance can run it.
 Today I detail how this can be accomplished step by step.
 
 <br>
 <br>
 
-In this example I am starting in Python 3.7 as my base or root environment, I will build a conda enviornment of 3.6 and emulate that Python version in jupyter notebook.
+In this example I am starting in Python 3.7 as my base or root environment, I will build a conda environment of 3.6 and emulate that Python version in jupyter notebook.
 
 <br>
 <br>
 
-First these commands can help show current anaconda enviornments and kernels for Jupyter notebooks.
+First these commands can help show current anaconda environments and kernels for Jupyter notebooks.
 
 <br>
 <br>
@@ -59,7 +59,7 @@ jupyter kernelspec list
 <br>
 <br>
 
-Step 1 - Create the Anaconda Envirnment
+Step 1 - Create the Anaconda Environment
 
 <br>
 <br>
@@ -74,14 +74,14 @@ conda create -name Python_36 python==3.6
 <br>
 <br>
 
-This creates a Anaconda virtual enviornment in the following directory: C:\Users\XXX\Anaconda3\envs
+This creates a Anaconda virtual environment in the following directory: C:\Users\XXX\Anaconda3\envs
 <br>
 <br>
 ![](/assets/img/MCE2.png)
 <br>
 <br>
 
-Step 2 - Activate new enviornment and install helper modules
+Step 2 - Activate new environment and install helper modules
 <br>
 <br>
 activate Python_36
@@ -142,7 +142,7 @@ print(platform.sys.version)
 <br>
 <br>
 You should see a 3.6.XX version of Python returned.
-If you see the same version as your base enviornment try the Python[conda env:Python_36].
+If you see the same version as your base environment try the Python[conda env:Python_36].
 <br>
 <br>
 Now create another Notebook under Python3 and run the same command.
@@ -175,10 +175,10 @@ conda env remove -n env_name
 <br>
 <br>
 
-In this post we covered how to create multiple conda Python enviornments and flip between the two.
+In this post we covered how to create multiple conda Python environments and flip between the two.
 We extended that functionaility to Jupyter notebooks so that we can get other package congruenty if a package does not support a specific version of Python.
-Lastly we reviewed how to remove a Python enviornment if we no longer need it in both the Jupyter notebook kernels and Anaconda.
+Lastly we reviewed how to remove a Python environment if we no longer need it in both the Jupyter notebook kernels and Anaconda.
 
-On a closing note you can also view all the current enviornments and packages created from the command line in Anaconda navigator.
+On a closing note you can also view all the current environments and packages created from the command line in Anaconda navigator.
 
 ![](/assets/img/MCE6.png)
