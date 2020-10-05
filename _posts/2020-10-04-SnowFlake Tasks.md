@@ -4,6 +4,11 @@ Tasks allows you to create a SQL script or procedure and schedule it to run on y
 The Snowflake task engine is a CRON variant and should look familar syntactically if you are an avid linux user.
 CRON or CRONTAB is the linux version of windows task schedule. It is extermly simplified in regards to how it runs a job. It supports a few parameters and points to a .sh or other script file. The paramters control the frequency of the job being run, days of week and time.
 
+| Column 1 Header | Column 2 Header | Column 3 Header |
+| --------------- | --------------- | --------------- |
+| Row 1 Column 1 | Row 1 Column 2 | Row 1 Column 3 |
+| Row 2 Column 1 | Row 2 Column 2 | Row 2 Column 3 |
+| Row 3 Column 1 | Row 3 Column 2 | Row 3 Column 3 |
 
 MIN | HOUR | DAY | MON | WEEKDAY | Script| Description
 --- | --- | --- | --- | --- | --- | --- |
