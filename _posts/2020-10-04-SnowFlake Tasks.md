@@ -7,9 +7,9 @@ CRON or CRONTAB is the linux version of windows task schedule. It is extermly si
 
 MIN | HOUR | DAY | MON | WEEKDAY | Script| Description
 --- | --- | --- | --- | --- | --- | --- |
-* | * | * | * | * | script.sh |This task would run every minute,hour and day
+1 | * | * | * | * | script.sh |This task would run every minute,hour and day
 0 | 17 | * | * | sun | SundayScript.sh| Every Sunday at 5 PM
-* |10 | * | * | * | /scripts/EveryTenMinutes.sh | Every ten minutes
+1 |10 | * | * | * | /scripts/EveryTenMinutes.sh | Every ten minutes
 
 Snowflake has recently introduced this functionality so lets take a quick look at how to create our first task on our Snowflake instance.
 {% highlight SQL %}
