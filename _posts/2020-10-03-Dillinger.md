@@ -1,187 +1,118 @@
-# Dillinger
-
-~~~~sql
-update employee
-  set salary = salary * 2
-  where salary < 100000
-~~~~
-
-[![N|Solid](https://cldup.com/dTxpPi9lDf.thumb.png)](https://nodesource.com/products/nsolid)
-
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
-
-Dillinger is a cloud-enabled, mobile-ready, offline-storage, AngularJS powered HTML5 Markdown editor.
-
-  - Type some Markdown on the left
-  - See HTML in the right
-  - Magic
-
-# New Features!
-
-  - Import a HTML file and watch it magically convert to Markdown
-  - Drag and drop images (requires your Dropbox account be linked)
 
 
-You can also:
-  - Import and save files from GitHub, Dropbox, Google Drive and One Drive
-  - Drag and drop markdown and HTML files into Dillinger
-  - Export documents as Markdown, HTML and PDF
+{% highlight SQL %}
+DROP PROCEDURE IF EXISTS SPX_PY_PREDICT_IRIS;
+GO
+CREATE PROCEDURE SPX_PY_PREDICT_IRIS (@model varchar(100))
+AS
+BEGIN
+	DECLARE @py_model varbinary(max) = (select model from ML_Models where model_name = @model);
 
-Markdown is a lightweight markup language based on the formatting conventions that people naturally use in email.  As [John Gruber] writes on the [Markdown site][df1]
+	EXEC sp_execute_external_script
+					@language = N'Python'
+				  , @script = N'
+def convertName(i):
+	retList = ["Iris-setosa","Iris-versicolor","Iris-virginica"]
+	return retList[i]
 
-> The overriding design goal for Markdown's
-> formatting syntax is to make it as readable
-> as possible. The idea is that a
-> Markdown-formatted document should be
-> publishable as-is, as plain text, without
-> looking like it's been marked up with tags
-> or formatting instructions.
+import pickle
+import pandas as pd
+model = pickle.loads(py_model)
+df = input_data
+mylist = []
+for index, row in df.iterrows():
+	x = model.predict([[row["SepalLengthCm"], row["SepalWidthCm"],row["PetalLengthCm"],row["PetalWidthCm"]]])
+	mylist.append(x)
+OutputDataSet = pd.DataFrame(mylist)
+'
+					, @input_data_1 = N'Select "SepalLengthCm", "SepalWidthCm","PetalLengthCm","PetalWidthCm" from IRIS'
+					, @input_data_1_name = N'input_data'
+					, @params = N'@py_model varbinary(max)'
+					, @py_model = @py_model
 
-This text you see here is *actually* written in Markdown! To get a feel for Markdown's syntax, type some text into the left window and watch the results in the right.
+END;
+GO
 
-### Tech
+{% endhighlight %}
 
-Dillinger uses a number of open source projects to work properly:
+<br>
+<br>
 
-* [AngularJS] - HTML enhanced for web apps!
-* [Ace Editor] - awesome web-based text editor
-* [markdown-it] - Markdown parser done right. Fast and easy to extend.
-* [Twitter Bootstrap] - great UI boilerplate for modern web apps
-* [node.js] - evented I/O for the backend
-* [Express] - fast node.js network app framework [@tjholowaychuk]
-* [Gulp] - the streaming build system
-* [Breakdance](https://breakdance.github.io/breakdance/) - HTML to Markdown converter
-* [jQuery] - duh
+V. Now we create a temp table to hold the results from our newly predicting stored proc and join our predicted data back to the original data set and see how it performed.
 
-And of course Dillinger itself is open source with a [public repository][dill]
- on GitHub.
+<br>
+<br>
 
-### Installation
+{% highlight SQL %}
+IF OBJECT_ID('TEMPDB..#PRED_RESULTS') IS NOT NULL DROP TABLE #PRED_RESULTS
+CREATE TABLE #PRED_RESULTS
+(
+ID INT IDENTITY(1,1),
+PREDICTEDVAL INT
+)
 
-Dillinger requires [Node.js](https://nodejs.org/) v4+ to run.
+INSERT INTO #PRED_RESULTS
+EXEC SPX_PY_PREDICT_IRIS 'Iris Model'
+{% endhighlight %}
 
-Install the dependencies and devDependencies and start the server.
+<br>
+<br>
 
-```sh
-$ cd dillinger
-$ npm install -d
-$ node app
-```
+VI. Now join the results back to the original to assess model performance!
 
-For production environments...
+<br>
+<br>
 
-```sh
-$ npm install --production
-$ NODE_ENV=production node app
-```
+{% highlight SQL %}
 
-### Plugins
+--GRANULAR RESUTS
+SELECT PR.ID,
+CASE WHEN PR.PREDICTEDVAL = 0 THEN 'Iris-setosa' 
+	 WHEN PR.PREDICTEDVAL = 1 THEN 'Iris-versicolor'
+	 WHEN PR.PREDICTEDVAL = 2 THEN 'Iris-virginica'
+	 END AS PredictedSpecies,
+   SPECIES as Species,
+   IR.SEPALLENGTHCM,
+   IR.SEPALWIDTHCM,
+   PETALLENGTHCM,
+   PETALWIDTHCM
 
-Dillinger is currently extended with the following plugins. Instructions on how to use them in your own application are linked below.
+   FROM #PRED_RESULTS AS PR
+JOIN IRIS AS IR
+	ON PR.ID = IR.ID
 
-| Plugin | README |
-| ------ | ------ |
-| Dropbox | [plugins/dropbox/README.md][PlDb] |
-| GitHub | [plugins/github/README.md][PlGh] |
-| Google Drive | [plugins/googledrive/README.md][PlGd] |
-| OneDrive | [plugins/onedrive/README.md][PlOd] |
-| Medium | [plugins/medium/README.md][PlMe] |
-| Google Analytics | [plugins/googleanalytics/README.md][PlGa] |
+--AGGREGATED RESULTS
+SELECT 
+SUM(CASE WHEN PredictedSpecies = Species THEN 1 ELSE 0 END) AS CORRECT,
+SUM(CASE WHEN PredictedSpecies != Species THEN 1 ELSE 0 END) AS INCORRECT,
+CAST(SUM(CASE WHEN PredictedSpecies = Species THEN 1 ELSE 0 END) AS FLOAT)  / COUNT(*) AS ACCURACY
+FROM(
+SELECT PR.ID,
+CASE WHEN PR.PREDICTEDVAL = 0 THEN 'Iris-setosa' 
+	 WHEN PR.PREDICTEDVAL = 1 THEN 'Iris-versicolor'
+	 WHEN PR.PREDICTEDVAL = 2 THEN 'Iris-virginica'
+	 END AS PredictedSpecies,
+   SPECIES as Species,
+   IR.SEPALLENGTHCM,
+   IR.SEPALWIDTHCM,
+   PETALLENGTHCM,
+   PETALWIDTHCM
+FROM #PRED_RESULTS AS PR
+JOIN IRIS AS IR
+	ON PR.ID = IR.ID) AS X
+		
+{% endhighlight %}
 
+<br>
+<br>
+![Model Results](/assets/img/Iris Results.PNG)
 
-### Development
+<br>
+<br>
 
-Want to contribute? Great!
+![Model Results](/assets/img/Python ML Results.PNG)
 
-Dillinger uses Gulp + Webpack for fast developing.
-Make a change in your file and instantaneously see your updates!
+<br>
+<br>
 
-Open your favorite Terminal and run these commands.
-
-First Tab:
-```sh
-$ node app
-```
-
-Second Tab:
-```sh
-$ gulp watch
-```
-
-(optional) Third:
-```sh
-$ karma test
-```
-#### Building for source
-For production release:
-```sh
-$ gulp build --prod
-```
-Generating pre-built zip archives for distribution:
-```sh
-$ gulp build dist --prod
-```
-### Docker
-Dillinger is very easy to install and deploy in a Docker container.
-
-By default, the Docker will expose port 8080, so change this within the Dockerfile if necessary. When ready, simply use the Dockerfile to build the image.
-
-```sh
-cd dillinger
-docker build -t joemccann/dillinger:${package.json.version} .
-```
-This will create the dillinger image and pull in the necessary dependencies. Be sure to swap out `${package.json.version}` with the actual version of Dillinger.
-
-Once done, run the Docker image and map the port to whatever you wish on your host. In this example, we simply map port 8000 of the host to port 8080 of the Docker (or whatever port was exposed in the Dockerfile):
-
-```sh
-docker run -d -p 8000:8080 --restart="always" <youruser>/dillinger:${package.json.version}
-```
-
-Verify the deployment by navigating to your server address in your preferred browser.
-
-```sh
-127.0.0.1:8000
-```
-
-#### Kubernetes + Google Cloud
-
-See [KUBERNETES.md](https://github.com/joemccann/dillinger/blob/master/KUBERNETES.md)
-
-
-### Todos
-
- - Write MORE Tests
- - Add Night Mode
-
-License
-----
-
-MIT
-
-
-**Free Software, Hell Yeah!**
-
-[//]: # (These are reference links used in the body of this note and get stripped out when the markdown processor does its job. There is no need to format nicely because it shouldn't be seen. Thanks SO - http://stackoverflow.com/questions/4823468/store-comments-in-markdown-syntax)
-
-
-   [dill]: <https://github.com/joemccann/dillinger>
-   [git-repo-url]: <https://github.com/joemccann/dillinger.git>
-   [john gruber]: <http://daringfireball.net>
-   [df1]: <http://daringfireball.net/projects/markdown/>
-   [markdown-it]: <https://github.com/markdown-it/markdown-it>
-   [Ace Editor]: <http://ace.ajax.org>
-   [node.js]: <http://nodejs.org>
-   [Twitter Bootstrap]: <http://twitter.github.com/bootstrap/>
-   [jQuery]: <http://jquery.com>
-   [@tjholowaychuk]: <http://twitter.com/tjholowaychuk>
-   [express]: <http://expressjs.com>
-   [AngularJS]: <http://angularjs.org>
-   [Gulp]: <http://gulpjs.com>
-
-   [PlDb]: <https://github.com/joemccann/dillinger/tree/master/plugins/dropbox/README.md>
-   [PlGh]: <https://github.com/joemccann/dillinger/tree/master/plugins/github/README.md>
-   [PlGd]: <https://github.com/joemccann/dillinger/tree/master/plugins/googledrive/README.md>
-   [PlOd]: <https://github.com/joemccann/dillinger/tree/master/plugins/onedrive/README.md>
-   [PlMe]: <https://github.com/joemccann/dillinger/tree/master/plugins/medium/README.md>
-   [PlGa]: <https://github.com/RahulHP/dillinger/blob/master/plugins/googleanalytics/README.md>
+There we have it our first ML model trained in Python, stored in SQL server and executed via a stored procedure. So further interesting applications for this approach would be to build a SSRS report to capture the models predictions to stake holders. Also to keep advancing the models and "check them into" the sql database. We can easily keep a running talley of model performance because all of the models are stored in that table Ex Iris Model V1, Iris Model Winter, Iris Model 2020. 
