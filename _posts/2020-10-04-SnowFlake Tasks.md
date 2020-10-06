@@ -26,6 +26,10 @@ CRON or CRONTAB is the linux version of windows task schedule. It is extermly si
 <br>
 <br>
 
+![Model Results](/assets/img/CronMeta.PNG)
+
+<br>
+<br>
 Snowflake has recently introduced this functionality so lets take a quick look at how to create our first task on our Snowflake instance.
 
 
@@ -35,32 +39,25 @@ Snowflake has recently introduced this functionality so lets take a quick look a
 First lets create a table to store some data into. This will be the table targeted in our Snowflake task.
 
 {% highlight SQL %}
-Create table...
+CREATE DATABASE MYTASKEXAMPLES;
+
+USE DATABASE MYTASKEXAMPLES;
+
+CREATE OR REPLACE TABLE LOGTABLE
+(
+LogDT datetime
+)
 
 {% endhighlight %}
 
-
- <table style="width:100%">
-  <tr>
-    <th>Firstname</th>
-    <th>Lastname</th>
-    <th>Age</th>
-  </tr>
-  <tr>
-    <td>Jill</td>
-    <td>Smith</td>
-    <td>50</td>
-  </tr>
-  <tr>
-    <td>Eve</td>
-    <td>Jackson</td>
-    <td>94</td>
-  </tr>
-</table> 
 <br>
 <br>
 
 Next lets create and run a insert statment.
+
+{% highlight SQL %}
+INSERT INTO LOGTABLE(LogDT) VALUES(CURRENT_TIMESTAMP);
+{% endhighlight %}
 
 <br>
 <br>
@@ -68,21 +65,40 @@ Next lets create and run a insert statment.
 Now lets create the task which will use the SQL and the statement.
 
 {% highlight SQL %}
-CREATE TASK mytask_hour
-  WAREHOUSE = mywh
-  SCHEDULE = 'USING CRON 0 9-17 * * SUN America/Los_Angeles'
+
+CREATE OR REPLACE TASK MINUTEINSERT
+  WAREHOUSE = COMPUTE_WH
+  SCHEDULE = 'USING CRON * * * * * America/New_York'
   TIMESTAMP_INPUT_FORMAT = 'YYYY-MM-DD HH24'
 AS
-INSERT INTO mytable(ts) VALUES(CURRENT_TIMESTAMP);
+INSERT INTO LOGTABLE(LogDT) VALUES(CURRENT_TIMESTAMP);
 
 {% endhighlight %}
 
+This task create the task in Snowflake, but it will be initated in a suspended state. To turn the command on we must alter the task.
 <br>
 <br>
 
+{% highlight SQL %}
+ALTER TASK MINUTEINSERT RESUME;
+{% endhighlight %}
+<br>
+<br>
 Now all we need to do is wait and scan the table, here we can see every minute the task has ran and inserted our data.
 
 <br>
 <br>
-
+{% highlight SQL %}
+SELECT * FROM LOGTABLE
+{% endhighlight %}
+<br>
+<br>
+Turn off the task so it does not run up compute charges!
+{% highlight SQL %}
+ALTER TASK MINUTEINSERT SUSPEND; 
+{% endhighlight %}
+<br>
+<br>
 This is an extremly basic example, I will do some more complicated implementations of Snowflake tasks using SnowPipe and stored procedures soon. 
+You can also do preceding steps, notifications and many other nifty things with Snowflake tasks.
+
