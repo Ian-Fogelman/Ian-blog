@@ -64,6 +64,9 @@ INSERT INTO LOGTABLE(LogDT) VALUES(CURRENT_TIMESTAMP);
 
 Now lets create the task which will use the SQL and the statement.
 
+<br>
+<br>
+
 {% highlight SQL %}
 
 CREATE OR REPLACE TASK MINUTEINSERT
@@ -74,6 +77,8 @@ AS
 INSERT INTO LOGTABLE(LogDT) VALUES(CURRENT_TIMESTAMP);
 
 {% endhighlight %}
+<br>
+<br>
 
 This task create the task in Snowflake, but it will be initated in a suspended state. To turn the command on we must alter the task.
 <br>
@@ -91,6 +96,12 @@ Now all we need to do is wait and scan the table, here we can see every minute t
 {% highlight SQL %}
 SELECT * FROM LOGTABLE
 {% endhighlight %}
+
+<br>
+<br>
+
+![RESULTS](/assets/img/TASKQUERY.PNG)
+
 <br>
 <br>
 Turn off the task so it does not run up compute charges!
