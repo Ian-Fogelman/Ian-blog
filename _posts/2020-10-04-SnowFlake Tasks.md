@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Snowflake Tasks
-date:   2020-09-03
+date:   2020-10-04
 description: 2020-10-04-Snowflake Tasks
 img: SF.png # Add image post (optional)
 tags: [SnowFlake,SQL,AWS,CRONTAB,CRON]
