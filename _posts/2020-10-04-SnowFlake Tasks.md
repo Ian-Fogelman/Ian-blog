@@ -80,7 +80,10 @@ INSERT INTO LOGTABLE(LogDT) VALUES(CURRENT_TIMESTAMP);
 <br>
 <br>
 
-This task create the task in Snowflake, but it will be initated in a suspended state. To turn the command on we must alter the task.
+<br>
+<br>
+
+This will create the task in Snowflake, but it will be initated in a suspended state. To turn the command on we must alter the task.
 <br>
 <br>
 
