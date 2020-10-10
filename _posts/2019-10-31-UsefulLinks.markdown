@@ -49,7 +49,12 @@ author: Ian Fogelman # Add name author (optional)
           <td>4</td>
           <td>https://app.quickdatabasediagrams.com/#/</td>
           <td>Database schema tool</td>
-        </tr>          
+        </tr>  
+	<tr>
+          <td>5</td>
+          <td>view-source:http://localhost:8081/</td>
+          <td>How to view dynamic javascript content</td>
+        </tr>  
       </tbody>
     </table>
   </div>
