@@ -38,7 +38,7 @@ paginate: 6
 paginate_path: /page:num/
 
 # Build settings
- markdown: kramdown
+markdown: kramdown
 
 plugins:
   - jekyll-paginate
