@@ -23,11 +23,8 @@ author: Ian Fogelman # Add name author (optional)
 | Bree | 456     | 123   |
 | E    | 123     | 123   |
 
+## Amost always imports
 
-123
-
-
-
-|one|two|
-|---|---|
-|a|b|
+|  R |  Python |    Matlab |
+| --------- |:---|:---------|:-----|
+| library(tidyverse) |import numpy as np|
