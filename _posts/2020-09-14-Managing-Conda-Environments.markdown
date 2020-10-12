@@ -5,7 +5,7 @@ date:   2020-09-14
 description: How to build and load conda environments in Jupyter notebooks
 img: AN.png # Add image post (optional)
 tags: [Anaconda,conda,Environments]
-
+markdown: kramdown
 datatable: true
 author: Ian Fogelman # Add name author (optional)
 ---
@@ -182,3 +182,9 @@ Lastly we reviewed how to remove a Python environment if we no longer need it in
 On a closing note you can also view all the current environments and packages created from the command line in Anaconda navigator.
 
 ![](/assets/img/MCE6.png)
+
+
+Column 1 | Column 2 | Column 3
+--- | --- | ---
+**Things** | _Don't_ | [Need](http://makeuseof.com)
+To | *__Look__* | `Pretty`
