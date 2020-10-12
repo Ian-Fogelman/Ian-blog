@@ -190,19 +190,3 @@ Column 1 | Column 2 | Column 3
 A| B| C
 1| 2 | 3
 
-<br>
-
-| Name | Address | Phone |
-| ---- | ------- | ----- |
-| Ian  | 123     | 321   |
-| Bree | 456     | 123   |
-| E    | 123     | 123   |
-
-
-| Rating    | Security            | Explanation                             |
-|-----------|---------------------|-----------------------------------------|
-| Excellent | Very secure         | Criteria is met optimal                 |
-| High      | Secure              | Criteria is met                         |
-| Mid       | Insufficient secure | Criteria is met partly                  |
-| Low       | Insecure            | Criteria is no met                      |
-| N/A       | Not rated           | Criteria is not available or irrelevant |
