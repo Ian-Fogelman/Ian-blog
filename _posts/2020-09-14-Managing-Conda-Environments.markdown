@@ -184,7 +184,8 @@ On a closing note you can also view all the current environments and packages cr
 ![](/assets/img/MCE6.png)
 
 
+
 Column 1 | Column 2 | Column 3
 --- | --- | ---
-**Things** | _Don't_ | [Need](http://makeuseof.com)
-To | *__Look__* | `Pretty`
+A| B| C
+1| 2 | 3
