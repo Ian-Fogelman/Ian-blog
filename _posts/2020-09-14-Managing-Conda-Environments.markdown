@@ -189,3 +189,12 @@ Column 1 | Column 2 | Column 3
 --- | --- | ---
 A| B| C
 1| 2 | 3
+
+<br>
+
+| Name | Address | Phone |
+| ---- | ------- | ----- |
+| Ian  | 123     | 321   |
+| Bree | 456     | 123   |
+| E    | 123     | 123   |
+
