@@ -38,8 +38,7 @@ paginate: 6
 paginate_path: /page:num/
 
 # Build settings
-#markdown: kramdown
-markdown: maruku
+markdown: kramdown
 
   
 plugins:
