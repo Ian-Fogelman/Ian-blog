@@ -17,14 +17,22 @@ author: Ian Fogelman # Add name author (optional)
 
 <br>
 <br>
-Today we will be utalizing a new feature in 2017+ SQL Server enviornments, machine learning via Python native script execution. In this tutorial we will recap how to load a Pickle file into a SQL server database stored as binary data. Retreive that file and load it as a machine learning model and apply the model predictions to our SQL Server data. The steps to achieve our predicts are as follows:
+Today we will be utilizing a new feature in 2017+ SQL Server environments: machine learning via Python native script execution. In this tutorial we will recap:
+<br>
+ 1) How to load a Pickle file into a SQL server database stored as binary data.
+<br>
+2) Retrieve that file and load it as a machine learning model.
+<br>
+
+3) Apply the model predictions to our SQL Server data. The steps to achieve our predictions are as follows:
 
 <br>
+
 <br>
 
-I. Create a Table to hold our binary Models<br>
-II. Create a table to hold our machine learning data<br>
-III. Create a procedure to load our pickled model into the ML table<br>
+I. Create a table to hold our binary models<br>
+II. Create a table to hold our machine learning (ML) data <br>
+III. Create a procedure to load our pickled model into the ML table <br>
 IV. Fire stored procedure to load the pickle file<br>
 V. Create another stored procedure to take in our SQL server data and model and return a result set<br>
 VI. Compare the result set from the model to our data
@@ -32,20 +40,22 @@ VI. Compare the result set from the model to our data
 <br>
 <br>
 
+Download the zip file below to follow along with this tutorial. The files include
+<br>
+<br>
 
 <a href="https://github.com/Ian-Fogelman/ian-blog/raw/master/assets/files/ML%20Init.zip" target="_blank">ML Init.zip</a>
 
 <br>
 <br>
-Files : <br>
-<strong>Iris.csv<br>
-IrisClassifier.pkl<br>
-ML Init.sql</strong>
+<strong>Iris.csv – The raw data from the Iris dataset.<br>
+IrisClassifier.pkl – The pickle file which holds the machine learning model<br>
+ML Init.sql – The SQL server initialization file to setup the SQL server database and table structure. </strong>
 
 <br>
 <br>
 
-I. First step is we create a database and a table to store our machine learning logic
+I. First step is to create a database and a table to store our machine learning logic
 
 <br>
 <br>
@@ -72,7 +82,7 @@ GO
 
 {% highlight SQL %}
 {% endhighlight %}
-II. Next we need to load the Iris data from our csv file into a table in our new database, lets create the table in TSQL and utilize a bulk insert command.
+II. Next we need to load the Iris data from our csv file into a table in our new database. Let’s create the table in TSQL and utilize a bulk insert command.
 
 <br>
 <br>
@@ -102,7 +112,7 @@ SELECT * FROM IRIS
 <br>
 <br>
 
-III. Next we must load our persisted model logic from a pickle file. Pickle is a python library that allows you to persist anything to a file on your work station. In this case I trained the model beforehand in a jupyter notebook enviornment and created the pickle file already.
+III. Next we must load our persisted model logic from a pickle file. Pickle is a python library that allows you to persist anything to a file on your work station. In this case, I trained the model beforehand in a jupyter notebook environment and created the pickle file already.
 
 <br>
 <br>
@@ -145,7 +155,7 @@ SELECT * FROM ML_Models
 <br>
 
 IV. Next we need a stored procedure that will pick up the binary stored in our table and apply the model prediction to our data.
-To do this we use a combination of the input_data_1 input_data_name and params keyword arguments for our stored procedure.
+To do this we use a combination of the <em> input_data_1, input_data_name and params </em> keyword arguments for our stored procedure.
 
 
 <br>
@@ -190,7 +200,7 @@ GO
 <br>
 <br>
 
-V. Now we create a temp table to hold the results from our newly predicting stored proc and join our predicted data back to the original data set and see how it performed.
+V. Now we create a temp table to hold the results from our newly predicting stored procedure.
 
 <br>
 <br>
@@ -267,4 +277,6 @@ JOIN IRIS AS IR
 <br>
 <br>
 
-There we have it our first ML model trained in Python, stored in SQL server and executed via a stored procedure. So further interesting applications for this approach would be to build a SSRS report to capture the models predictions to stake holders. Also to keep advancing the models and "check them into" the sql database. We can easily keep a running talley of model performance because all of the models are stored in that table Ex Iris Model V1, Iris Model Winter, Iris Model 2020. 
+There we have it; our first ML model trained in Python, stored in SQL server and executed via a stored procedure! Further interesting applications for this approach would be to build a SSRS report to capture the model’s predictions for stakeholders. 
+<br>
+Also, to keep advancing the models and "check them into" the sql database, we can easily keep a running tally of model performance because all of the models are stored in the ML_Models table.
