@@ -18,10 +18,10 @@ author: Ian Fogelman # Add name author (optional)
 <br>
 <br>
 
-Today we take a look at a newish feature in Snowflake called Tasks.
+Today we take a look at a feature in Snowflake called Tasks.
 Tasks allows you to create a SQL script or procedure and schedule it to run on your Snowflake instance.
-The Snowflake task engine is a CRON variant and should look familar syntactically if you are an avid linux user.
-CRON or CRONTAB is the linux version of windows task schedule. It is extermly simplified in regards to how it runs a job. It supports a few parameters and points to a .sh or other script file. The paramters control the frequency of the job being run, days of week and time.
+The Snowflake task engine is a CRON variant and should look familiar syntactically if you are an avid Linux user.
+CRON or CRONTAB is the Linux version of windows task schedule. It is extremely simplified in regards to how it runs a job. It supports a few parameters and points to a .sh or other script file. The parameters, days of week and time, control the frequency of the job being run.
 
 <br>
 <br>
@@ -36,7 +36,7 @@ Snowflake has recently introduced this functionality so lets take a quick look a
 <br>
 <br>
 
-First lets create a table to store some data into. This will be the table targeted in our Snowflake task.
+First let’s create a table to store some data into. This will be the table targeted in our Snowflake task.
 
 {% highlight SQL %}
 CREATE DATABASE MYTASKEXAMPLES;
@@ -53,7 +53,7 @@ LogDT datetime
 <br>
 <br>
 
-Next lets create and run a insert statment.
+Next, let’s create and run an insert statement.
 
 {% highlight SQL %}
 INSERT INTO LOGTABLE(LogDT) VALUES(CURRENT_TIMESTAMP);
@@ -62,7 +62,7 @@ INSERT INTO LOGTABLE(LogDT) VALUES(CURRENT_TIMESTAMP);
 <br>
 <br>
 
-Now lets create the task which will use the SQL and the statement.
+Now let’s create the task that will use the insert SQL statement.
 
 <br>
 <br>
@@ -83,7 +83,7 @@ INSERT INTO LOGTABLE(LogDT) VALUES(CURRENT_TIMESTAMP);
 <br>
 <br>
 
-This will create the task in Snowflake, but it will be initated in a suspended state. To turn the command on we must alter the task.
+This will create the task in Snowflake, but it will be initiated in a suspended state. To turn the command on we must alter the task.
 <br>
 <br>
 
@@ -92,7 +92,7 @@ ALTER TASK MINUTEINSERT RESUME;
 {% endhighlight %}
 <br>
 <br>
-Now all we need to do is wait and scan the table, here we can see every minute the task has ran and inserted our data.
+Now all we need to do is wait and scan the table. Here we can see every minute the task has ran and inserted our data.
 
 <br>
 <br>
@@ -113,6 +113,6 @@ ALTER TASK MINUTEINSERT SUSPEND;
 {% endhighlight %}
 <br>
 <br>
-This is an extremly basic example, I will do some more complicated implementations of Snowflake tasks using SnowPipe and stored procedures soon. 
+This is an extremely basic example. I will do some more complicated implementations of Snowflake tasks using Snowpipe and stored procedures soon. 
 You can also do preceding steps, notifications and many other nifty things with Snowflake tasks.
 
