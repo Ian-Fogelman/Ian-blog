@@ -37,7 +37,7 @@ First we will test SQL server, not specified any type of collation with a column
 
 
 
-```
+```sql
 CREATE TABLE #TEMP_A
 (
 TEST VARCHAR(50)
