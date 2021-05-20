@@ -19,15 +19,7 @@ author: Ian Fogelman # Add name author (optional)
 
 In a best case scenario, you may never notice your databases collation at all. But lets take a step back and ask what actually is collation to begin with? 
 
-Collation is the set of character encoding which your data is stored with. Collation can be applied on the column level particular ally with the VARCHAR data type.
-
-<br>
-
-<br>
-
-Lets take a look at a few different implementations of none specified collation to see how different RDMS's handle this. <br>
-
-First we will test SQL server, not specified any type of collation with a column and observe the default behavior.
+Collation is the set of character encoding which your data is stored with. Collation can be applied on the column level particular ally with the VARCHAR data type. Lets take a look at a few different implementations of none specified collation to see how different RDMS's handle this. First we will test SQL server, not specified any type of collation with a column and observe the default behavior.
 
 <br>
 
