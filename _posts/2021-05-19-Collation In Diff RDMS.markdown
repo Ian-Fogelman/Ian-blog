@@ -37,7 +37,8 @@ First we will test SQL server, not specified any type of collation with a column
 
 
 
-```sql
+{% highlight SQL %}
+
 CREATE TABLE #TEMP_A
 (
 TEST VARCHAR(50)
@@ -56,5 +57,5 @@ WHERE TEST = 'ABc'
 SELECT * FROM #TEMP_A
 WHERE TEST = 'ABC'
 
-```
+{% endhighlight %}
 
