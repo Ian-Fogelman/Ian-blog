@@ -4,7 +4,7 @@ title:  Database Collations in Different RDMS
 date:   2021-05-19
 description: 2021-05-19-Database Collations in Different RDMS
 img: SF.png # Add image post (optional)
-tags: [SnowFlake,SQL,AWS,CRONTAB,CRON]
+tags: [RDMS,SQL,Collation,SQL-Concepts]
 
 datatable: true
 author: Ian Fogelman # Add name author (optional)
