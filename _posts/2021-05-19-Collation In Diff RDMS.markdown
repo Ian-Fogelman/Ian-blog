@@ -3,7 +3,7 @@ layout: post
 title:  Database Collations in Different RDMS
 date:   2021-05-19
 description: 2021-05-19-Database Collations in Different RDMS
-img: SF.png # Add image post (optional)
+img: sq.png # Add image post (optional)
 tags: [RDMS,SQL,Collation,SQL-Concepts]
 
 datatable: true
