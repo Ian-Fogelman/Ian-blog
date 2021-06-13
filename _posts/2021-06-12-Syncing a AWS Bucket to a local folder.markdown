@@ -95,11 +95,13 @@ Next fire the aws s3 sync command with the target s3 bucket you are wanting to p
 
 <br>
 
-```bash
+{% highlight cmd%}
+
 cd C:\Test
 
 aws s3 sync s3://MyTargetBucket .
-```
+
+{% endhighlight %}
 
 
 
