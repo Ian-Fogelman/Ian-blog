@@ -3,7 +3,7 @@ layout: post
 title:  Syncing an Entire S3 bucket to local
 date:   2021-06-13
 description: 2021-06-13-Syncing an Entire S3 bucket to local
-img: aws.png # Add image post (optional)
+img: AWS.png # Add image post (optional)
 tags: [AWS,S3]
 
 datatable: true
@@ -37,11 +37,11 @@ As a refresher, you can view all the S3 buckets you have by running the followin
 
 <br>
 
-```bash
+{% highlight cmd%}
+
 aws s3api list-buckets
-```
 
-
+{% endhighlight %}
 
 <br>
 
